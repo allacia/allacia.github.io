@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Оптовая продажа товаров</title>
+	<link rel="stylesheet" href="font-awesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+	<header>
+		<div class="navbar-mobile">
+			<div class="btn">
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+
+		<div class="wrapper-nav">
+			<div class="logo">
+				<a href="#"><i class="fab fa-pied-piper"></i></a>
+			</div>
+			<div class="nav">
+				<div class="top-nav">
+					<div class="menu">
+						<ul>
+							<li>Главная</li>
+							<li class="active">Каталог</li>
+							<li>О компании</li>
+							<li>Гарантия и доставка</li>
+							<li>Прайс-лист</li>
+							<li>Контакты</li>
+						</ul>
+					</div>
+					<div class="search">
+						<label for=""><i class="fas fa-search"></i></label>
+						<input type="text" placeholder="Поиск">
+					</div>
+					<div class="addition">
+						<div class="auth">
+							<a class="enter" href="#">Войти </a>
+							<a href="#">Регистрация</a>
+						</div>
+						<div class="backet">
+							<i class="fas fa-shopping-basket"></i>
+							<a href="#">0 шт/0 руб</a>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-nav">
+					<div class="wrapper-categories">
+						<ul>
+							<li><a href="#">Hoco</a></li>
+							<li><a href="#">UBIC</a></li>
+							<li><a href="#">Dotfes</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="content-container">
+			<div class="left-nav">
+				<div class="hoco">
+					<a href="#">Hoco</a>
+					<div class="input-group">
+						<input type="checkbox" class="hoco-win" name="" value="">
+						<h5>Защ. стекла и пленки</h5>
+					</div>
+					<div class="input-group">
+						<input type="checkbox" class="hoco-mono" name="" value="">
+						<h5>Моноподы</h5>
+					</div>
+				</div>
+				<div class="ubic">
+					<a href="#">UBIK</a>
+					<div class="input-group">
+						<input type="checkbox" class="ubic-win" name="" value="">
+						<h5>Защитные стекла</h5>
+					</div>
+				</div>
+				<div class="dotfes">
+					<a href="#">Dotfes</a>
+					<div class="input-group">
+						<input type="checkbox" class="dotfes-usb" name="" value="">
+						<h5>USB дата кабели</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="sort" data-json>
+					<select size="1">
+						<option disabled value="дешевые">Сортировка</option>
+				    <option selected>От дешевых к дорогим</option>
+				    <option value="дорогие">От дорогих к дешевым</option>
+		   		</select>
+				</div>
+				<div class="categories-mobile">
+					<select class="" name="">
+							<option selected class="all" value="">Все</option>
+							<option class="hoco-win" name="" value="">Защ. стекла и пленки</option>
+							<option value="" class="hoco-mono">Моноподы</option>
+							<option value="" class="ubic-win">Защитные стекла</option>
+							<option value="" class="dotfes-usb">USB дата кабели</option>
+					</select>
+				</div>
+
+				<div class="wrapper-cart">
+
+				</div>
+
+				<div class="pages">
+					<ul>
+						<li><a class="active" href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li>...</li>
+						<li><a href="#">21</a></li>
+						<li><a href="#">Показать</a></li>
+					</ul>
+					<input type="text" name="" value="24">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="wrapper-footer">
+			<div class="logo">
+				<a href="#"><i class="fab fa-pied-piper"></i></a>
+			</div>
+			<div class="categories">
+				<h4>Категории товаров</h4>
+				<a href="#">Hoco</a>
+				<a href="#">Ubic</a>
+				<a href="#">Dotfes</a>
+			</div>
+			<div class="also">
+				<h4>Дополнительно</h4>
+				<a href="#">Каталог</a>
+				<a href="#">Гарантия и доставка</a>
+				<a href="#">Контакты</a>
+				<a href="#">О компании</a>
+				<a href="#">Прайс-лист</a>
+			</div>
+			<div class="contacts">
+				<h4>Контакты</h4>
+				<ul>
+					<li><i class="fas fa-map-marker-alt"></i> г.Одесса, проспект Шевченко 1</li>
+					<li><i class="fas fa-phone"></i> +380505050505</li>
+					<li><i class="fas fa-envelope"></i> support@gmail.com</li>
+					<li><i class="fas fa-clock"></i> Пн – Пт 09:00 – 20:00</li>
+				</ul>
+			</div>
+			<div class="wrapper-basket">
+				<h4>Личный кабинет</h4>
+				<div class="basket">
+					<h4>Ваша корзина</h4>
+					<p>0 шт / 0 руб.</p>
+					<a href="#">Перейти</a>
+				</div>
+			</div>
+
+		</div>
+		<span>Copyright &#169; 2012-2015 Logistics</span>
+	</footer>
+
+<script src="js/jquery-2.2.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

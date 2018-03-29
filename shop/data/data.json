@@ -1,0 +1,100 @@
+{
+  "mobile": [
+    {
+      "class": "cart hoco-win all",
+      "tag": "#ULO6",
+      "name": "HOCO пленки ip6+",
+      "srcimage": "img/1.jpeg",
+      "price": "26.65р",
+      "opt": "Опт(-5%)"
+    },
+    {
+      "class": "cart hoco-win all",
+      "tag": "#ULO6",
+      "name": "HOCO пленки ip6+",
+      "srcimage": "img/1.jpeg",
+      "price": "26.65р",
+      "opt": "Опт(-5%)"
+    },
+    {
+      "class": "cart ubic-win all",
+      "tag": "#ULO6",
+      "name": "UBIK Glass iPhone 7",
+      "srcimage": "img/2.jpeg",
+      "price": "26.65р",
+      "opt": "Опт(-5%)"
+    },
+    {
+      "class": "cart hoco-mono all",
+      "tag": "#ULO6",
+      "name": "HOCO Моноподы ip6+",
+      "srcimage": "img/2.jpeg",
+      "price": "26.65р",
+      "opt": "Опт(-5%)"
+    },
+    {
+      "class": "cart hoco-mono all",
+      "tag": "#ULO6",
+      "name": "HOCO Моноподы ip6+",
+      "srcimage": "img/2.jpeg",
+      "price": "26.65р",
+      "opt": "Опт(-5%)"
+    },
+    {
+      "class": "cart hoco-win all",
+      "tag": "#ULO6",
+      "name": "HOCO пленки ip6+",
+      "srcimage": "img/1.jpeg",
+      "price": "26.65р",
+      "opt": "Опт(-5%)"
+    },
+    {
+      "class": "cart ubic-win all",
+      "tag": "#ULO6",
+      "name": "UBIK Glass iPhone 7",
+      "srcimage": "img/2.jpeg",
+      "price": "26.65р",
+      "opt": "Опт(-5%)"
+    },
+    {
+      "class": "cart ubic-win all",
+      "tag": "#ULO6",
+      "name": "UBIK Glass iPhone 7",
+      "srcimage": "img/2.jpeg",
+      "price": "26.65р",
+      "opt": "Опт(-5%)"
+    },
+    {
+      "class": "cart ubic-win all",
+      "tag": "#ULO6",
+      "name": "UBIK Glass iPhone 7",
+      "srcimage": "img/2.jpeg",
+      "price": "26.65р",
+      "opt": "Опт(-5%)"
+    },
+    {
+      "class": "cart dotfes-usb all",
+      "tag": "#ULO6",
+      "name": "USB кабель dotfes A03 Lightning (1m) Gold",
+      "srcimage": "img/4.jpeg",
+      "price": "26.65р",
+      "opt": "Опт(-5%)"
+    },
+    {
+      "class": "cart dotfes-usb all",
+      "tag": "#ULO6",
+      "name": "USB кабель dotfes A03 Lightning (1m) Gold",
+      "srcimage": "img/4.jpeg",
+      "price": "26.65р",
+      "opt": "Опт(-5%)"
+    },
+    {
+      "class": "cart dotfes-usb all",
+      "tag": "#ULO6",
+      "name": "USB кабель dotfes A03 Lightning (1m) Gold",
+      "srcimage": "img/4.jpeg",
+      "price": "26.65р",
+      "opt": "Опт(-5%)"
+    }
+  ]
+}
