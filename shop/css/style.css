@@ -53,6 +53,7 @@ header .wrapper-nav .nav .top-nav {
   flex-direction: row;
 }
 header .wrapper-nav .nav .top-nav .menu {
+  justify-content: center;
   border-bottom: 1px solid #dee0e3;
   width: 52%;
 }
@@ -124,7 +125,7 @@ header .wrapper-nav .nav .bottom-nav .wrapper-categories ul li a.active {
 }
 section .content-container {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
 }
 section .content-container .left-nav {
   width: 15%;
@@ -165,9 +166,7 @@ section .content-container .left-nav .dotfes .input-group h5 {
   display: inline;
 }
 section .content-container .content {
-  width: 84.9%;
   padding: 30px;
-  box-sizing: border-box;
   background-color: #ecf0f1;
 }
 section .content-container .content .sort,
@@ -192,11 +191,14 @@ section .content-container .content .wrapper-cart {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin-right: -15px;
+  justify-content: center;
 }
 section .content-container .content .wrapper-cart .cart {
   background-color: white;
   width: 19%;
-  margin-right: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
   margin-bottom: 30px;
   padding: 20px;
 }
@@ -217,6 +219,7 @@ section .content-container .content .wrapper-cart .cart img {
 }
 section .content-container .content .wrapper-cart .cart .price-container {
   display: flex;
+  position: relative;
 }
 section .content-container .content .wrapper-cart .cart .price-container .price p {
   font-size: 24px;
@@ -230,9 +233,11 @@ section .content-container .content .wrapper-cart .cart .price-container .price 
 section .content-container .content .wrapper-cart .cart .price-container .btn {
   padding-left: 50px;
   padding-top: 10px;
+  position: absolute;
+  margin-top: 40px;
+  right: 0;
 }
 section .content-container .content .wrapper-cart .cart .price-container .btn a {
-  float: right;
   padding: 12px 25px;
   color: #fff;
 }
@@ -385,24 +390,34 @@ footer span {
   }
   header .wrapper-nav.mobile .nav .top-nav {
     display: block;
+    width: 100%;
   }
   header .wrapper-nav.mobile .nav .top-nav .menu {
     display: block;
     border: none;
     padding-left: 20px;
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .menu ul {
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .menu ul li {
+    width: 100%;
   }
   header .wrapper-nav.mobile .nav .top-nav .search {
     display: block;
     border: 1px solid #dee0e3;
-    width: 80%;
-    margin: 15px;
+    width: 70%;
+    margin: 15px auto;
   }
   header .wrapper-nav.mobile .nav .top-nav .addition {
     display: block;
     width: 100%;
+    justify-content: center;
   }
   header .wrapper-nav.mobile .nav .top-nav .addition .auth {
     border: none;
+    text-align: center;
   }
   header .wrapper-nav.mobile .nav .top-nav .addition .auth a {
     padding: 12px 25px;
@@ -410,11 +425,8 @@ footer span {
     color: #fff;
   }
   header .wrapper-nav.mobile .nav .top-nav .addition .auth a.enter {
-    width: 45%;
     color: #fff;
     padding: 12px 25px;
-    margin: 0;
-    margin-left: 30px;
   }
   header .wrapper-nav.mobile .nav .top-nav .addition .backet {
     text-align: center;
@@ -432,9 +444,6 @@ footer span {
   section .content-container .left-nav {
     display: none;
   }
-  section .content-container .content {
-    width: 100%;
-  }
   section .content-container .content .categories-mobile {
     display: block;
   }
@@ -443,6 +452,8 @@ footer span {
   }
   section .content-container .content .wrapper-cart .cart {
     width: 85%;
+    margin-left: 0;
+    margin-rigth: 0;
   }
   footer .wrapper-footer {
     display: block;
@@ -475,5 +486,97 @@ footer span {
   footer .wrapper-footer .wrapper-basket .basket {
     width: 90%;
     padding-bottom: 50px;
+  }
+}
+@media (max-width: 1500px) and (min-width: 768px) {
+  header .navbar-mobile {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    height: 7%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 100;
+  }
+  header .navbar-mobile .btn {
+    padding: 10px;
+  }
+  header .wrapper-nav {
+    display: none;
+  }
+  header .wrapper-nav.mobile {
+    display: block;
+    width: 30%;
+    position: fixed;
+    background-color: #fff;
+    left: 0;
+    z-index: 100;
+    border-right: 1px solid #dee0e3;
+  }
+  header .wrapper-nav.mobile .logo {
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .logo a {
+    display: block;
+    margin: 0 auto;
+  }
+  header .wrapper-nav.mobile .nav {
+    display: block;
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .nav .top-nav {
+    display: block;
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .menu {
+    display: block;
+    border: none;
+    padding-left: 20px;
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .menu ul {
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .menu ul li {
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .search {
+    display: block;
+    border: 1px solid #dee0e3;
+    width: 70%;
+    margin: 15px auto;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .addition {
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .addition .auth {
+    border: none;
+    text-align: center;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .addition .auth a {
+    padding: 12px 25px;
+    background-color: #2a8faf;
+    color: #fff;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .addition .auth a.enter {
+    color: #fff;
+    padding: 12px 25px;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .addition .backet {
+    text-align: center;
+  }
+  header .wrapper-nav.mobile .nav .bottom-nav .wrapper-categories ul li {
+    display: block;
+    border: none;
+    text-align: center;
+    width: 90%;
+  }
+  section .content-container {
+    margin-top: 5%;
   }
 }

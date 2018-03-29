@@ -61,7 +61,6 @@ $(document).ready(function() {
       if(!($('input:checkbox').prop('checked'))) {
         $('.cart').removeClass('hidden');
         actionFilter = false;
-        console.log(4);
       }
       actionHiddenClass = true;
     }
@@ -93,7 +92,6 @@ $(document).ready(function() {
       if(!($('input:checkbox').prop('checked'))) {
         $('.cart').removeClass('hidden');
         actionFilter = false;
-        console.log(4);
       }
       actionHiddenClass = true;
     }
@@ -111,7 +109,6 @@ $(document).ready(function() {
 
 
     $.getJSON("data/data.json", function(data){
-      console.log(data);
       var content = '';
       for (var i in data.mobile) {
     		content += '<div class="' + data.mobile[i].class + '">'
@@ -123,7 +120,7 @@ $(document).ready(function() {
     					+ '<p>' + data.mobile[i].price + '</p>'
               + '<p class="opt">' + data.mobile[i].opt + '</p>'
               + '</div>'
-              + '<div class="btn"><a href="#">В корзину</a>'
+              + '<div class="btn"><a href="#">Купить</a>'
               + '</div>'
               + '</div>'
               + '</div>'
