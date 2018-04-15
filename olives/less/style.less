@@ -5,10 +5,19 @@
 @olives-dark: #5c5c02;
 
 .title(@color) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   h3 {
     color: @color;
     font-weight: 200;
@@ -54,9 +63,15 @@ header {
   padding: 3% 10%;
   nav {
     ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       li {
         a {
           margin: 15px;
@@ -64,6 +79,7 @@ header {
           font-weight: 300;
           font-size: 1.2em;
           color: @olives;
+          -webkit-transition: .5s;
           transition: .5s;
           &:hover {
             color: @olives-dark;
@@ -80,10 +96,19 @@ header {
     color: @olives;
   }
   .photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     img {
       width: 60%;
     }
@@ -109,11 +134,19 @@ header {
   background-color: #fff;
   top: 50px;
   left: 0;
-  box-shadow: 15px 15px 37px -14px rgba(87,103,46,1);
+  -webkit-box-shadow: 15px 15px 37px -14px rgba(87,103,46,1);
+          box-shadow: 15px 15px 37px -14px rgba(87,103,46,1);
   ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     li {
       margin-bottom: 10px;
       a {
@@ -135,9 +168,15 @@ section {
       .title(#fff);
     }
     .charts {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       width: 90%;
       #chart-vit, #chart-nutr {
         max-width: 40%;
@@ -154,9 +193,15 @@ section {
       .title(@olives);
     }
     .old-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       .photo-old {
         width: 45%;
         img {
@@ -185,10 +230,17 @@ section {
       .title(#fff);
     }
     .facts-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       .fact {
         margin: 20px;
         width: 300px;
@@ -277,10 +329,19 @@ section {
   .container-forms {
     width: 70%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     input {
       width: 100%;
       padding: 10px;
@@ -303,8 +364,12 @@ section {
     }
   }
   .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 20px;
     button {
       padding: 12px 25px;
@@ -313,6 +378,7 @@ section {
       border-radius: 3px;
       color: #fff;
       cursor: pointer;
+      -webkit-transition: .5s;
       transition: .5s;
       &:hover {
         background-color: @olives-dark;
@@ -326,9 +392,15 @@ footer {
     background-color: @olives;
     padding: 3% 10%;
     .social {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       a {
         margin: 10px;
         width: 30px;
@@ -336,9 +408,15 @@ footer {
         background-color: #fff;
         color: @olives;
         border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         i {
           &:hover {
             color: @olives-light;
@@ -347,8 +425,12 @@ footer {
       }
     }
     .text {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       span {
         font-weight: 100;
         color: #fff;
@@ -396,8 +478,12 @@ footer {
         display: block;
         .photo-old {
           width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          justify-content: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
           margin-bottom: 20px;
         }
       }
