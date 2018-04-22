@@ -32,6 +32,7 @@ span {
   text-decoration: none;
   font-weight: normal;
   color: #72777a;
+  outline: none;
 }
 header {
   background-color: #fff;
@@ -350,7 +351,7 @@ section .wrapper-slider .title p {
 section .wrapper-slider .slider-container {
   opacity: 1;
   max-width: 60%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 section .wrapper-slider .slider-container .slider-photo img {
   max-width: 100%;
@@ -432,9 +433,10 @@ section .container-forms input {
   margin-bottom: 20px;
   border-radius: 3px;
   border: 1px solid #57672e;
+  outline: none;
 }
-section .container-forms input:hover {
-  border: 1px solid #808000;
+section .container-forms input:focus {
+  border: 1px solid #c7c707;
 }
 section .container-forms textarea {
   width: 100%;
@@ -442,9 +444,10 @@ section .container-forms textarea {
   resize: none;
   border-radius: 3px;
   border: 1px solid #57672e;
+  outline: none;
 }
-section .container-forms textarea:hover {
-  border: 1px solid #808000;
+section .container-forms textarea:focus {
+  border: 1px solid #c7c707;
 }
 section .btn {
   display: -webkit-box;
