@@ -119,9 +119,9 @@ header .wrapper-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0 10%;
   padding-top: 110px;
   background: url(../img/bg.jpeg);
@@ -160,12 +160,7 @@ header .wrapper-header .logo-download a:active {
   color: #000;
   border: 3px solid #000;
 }
-header .wrapper-header .signup {
-  max-width: 50%;
-}
 header .wrapper-header .signup .title {
-  float: right;
-  width: 60%;
   padding: 10px 0;
   text-align: center;
   font-weight: bold;
@@ -186,8 +181,6 @@ header .wrapper-header .signup .title span {
   text-transform: uppercase;
 }
 header .wrapper-header .signup .input-group {
-  float: right;
-  width: 60%;
   background-color: #fff;
   text-align: center;
 }
@@ -204,10 +197,6 @@ header .wrapper-header .signup .input-group input:last-child {
 header .wrapper-header .signup .input-group input:focus {
   border-bottom: 1px solid #ff8b38;
   outline: none;
-}
-header .wrapper-header .signup .btn {
-  float: right;
-  width: 60%;
 }
 header .wrapper-header .signup .btn button {
   width: 100%;

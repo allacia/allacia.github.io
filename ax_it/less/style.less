@@ -129,9 +129,9 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0 10%;
     padding-top: 110px;
     background: url(../img/bg.jpeg);
@@ -139,18 +139,15 @@ header {
     height: 600px;
 
     .logo-download {
-
       img {
         width: 100px;
       }
-
       h1 {
         width: 90%;
         padding: 15px 0;
         font-size: 25px;
         color: @gray;
       }
-
       hr {
         width: 45px;
         height: 1px;
@@ -159,32 +156,24 @@ header {
         color: @gray;
         background-color: @gray;
       }
-
       p {
         width: 90%;
         margin-bottom: 40px;
         font-size: 13px;
         color: @gray;
       }
-
       a {
         padding: 12px 25px;
         color: @gray;
         border: 3px solid @gray;
-
         &:active {
           color: #000;
           border: 3px solid #000;
         }
       }
     }
-
     .signup {
-      max-width: 50%;
-
       .title {
-        float: right;
-        width: 60%;
         padding: 10px 0;
         text-align: center;
         font-weight: bold;
@@ -192,7 +181,6 @@ header {
         background-color: #f5f5f5;
         border-top-right-radius: 3px;
         border-top-left-radius: 3px;
-
         h2 {
           font-size: inherit;
           font-weight: inherit;
@@ -206,33 +194,24 @@ header {
         }
       }
       .input-group {
-        float: right;
-        width: 60%;
         background-color: #fff;
         text-align: center;
-
         input {
           width: 80%;
           padding: 10px;
           margin: 15px;
           border: none;
           border-bottom: 1px solid #d6d6d6;
-
           &:last-child {
             margin-bottom: 30px;
           }
-
           &:focus {
             border-bottom: 1px solid @orange;
             outline: none;
           }
         }
       }
-
       .btn {
-        float: right;
-        width: 60%;
-
         button {
           width: 100%;
           padding: 20px;
@@ -243,7 +222,6 @@ header {
           border-bottom-right-radius: 3px;
           border-bottom-left-radius: 3px;
           cursor: pointer;
-
           &:hover {
             background-color: @dark-orange;
           }
