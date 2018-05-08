@@ -102,6 +102,9 @@ span {
   font-weight: normal;
   color: #72777a;
 }
+input {
+  outline: none;
+}
 nav .left-nav {
   position: fixed;
   top: 0;
