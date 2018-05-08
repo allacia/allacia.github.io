@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat</title>
+  <link rel="stylesheet" href="css/preloader.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="font/themify-icons.css" rel="stylesheet">
+  <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_chat.css">
+</head>
+
+<body>
+  <div class="loaderArea">
+   <div class="loader"></div>
+  </div>
+
+  <nav>
+    <div class="left-nav">
+      <div class="logo">
+        <a href="index.html"><span class="ti-star blue"></span></a>
+        <a href="index.html"><p>Logotype</p></a>
+      </div>
+      <div class="menu-list">
+        <div class="list">
+          <a href="index.html" title="Dashboard"><span class="ti-home blue"></span></a>
+          <a class="hidden" href="index.html">Dashboard</a>
+        </div>
+        <div class="list">
+          <a href="email.html" title="Email"><span class="ti-email gray"></span></a>
+          <a class="hidden" href="email.html">Email</a>
+        </div>
+        <div class="list">
+          <a href="compose.html" title="Compose"><span class="ti-share blue"></span></a>
+          <a class="hidden" href="compose.html">Compose</a>
+        </div>
+        <div class="list">
+          <a href="calendar.html" title="Calendar"><span class="ti-calendar orange"></span></a>
+          <a class="hidden" href="calendar.html">Calendar</a>
+        </div>
+        <div class="list">
+          <a href="chat.html" title="Chat"><span class="ti-comment-alt violet"></span></a>
+          <a class="hidden" href="chat.html">Chat</a>
+        </div>
+        <div class="list">
+          <a href="charts.html" title="Charts"><span class="ti-bar-chart violet"></span></a>
+          <a class="hidden" href="charts.html">Charts</a>
+        </div>
+        <div class="list">
+          <a href="forms.html" title="Forms"><span class="ti-pencil blue"></span></a>
+          <a class="hidden" href="forms.html">Forms</a>
+        </div>
+        <div class="list">
+          <a href="elements.html" title="UI Elements"><span class="ti-palette red"></span></a>
+          <a class="hidden" href="elements.html">UI Elements</a>
+        </div>
+      </div>
+    </div>
+    <div class="top-nav">
+      <div class="wrapper-menu">
+        <div class="menu">
+          <span class="ti-menu"></span>
+        </div>
+        <div class="search">
+          <span class="ti-search"></span>
+          <input type="text" placeholder="Search..." name="search" value="">
+        </div>
+      </div>
+      <div class="notification">
+        <div class="bell">
+          <span class="ti-bell" data-modal="#m1"></span>
+        </div>
+        <div class="message">
+          <span class="ti-email" data-modal="#m2"></span>
+        </div>
+        <div class="profile" data-modal="#m3">
+          <div class="icon"></div>
+          <div class="name">
+            <p>John Doe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal-container">
+  	<div id="m1" class="modal">
+  		<div class="title">
+        <span class="ti-bell"></span>
+        <h3>Notification</h3>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>John Doe <span>liked your</span> post</h4>
+          <p>5 mins ago</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>Moo Doe <span>liked your</span> cover image</h4>
+          <p>7 mins ago</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>Lee Doe <span>commented on your</span> video</h4>
+          <p>10 mins ago</p>
+        </div>
+      </div>
+      <div class="footer-notif">
+        <h3>View All Notification</h3>
+        <span class="ti-angle-right"></span>
+      </div>
+  	</div>
+  	<div id="m2" class="modal">
+      <div class="title">
+        <span class="ti-email"></span>
+        <h3>Emails</h3>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>John Doe</h4>
+            <span>5 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>Moo Doe</h4>
+            <span>15 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>Lee Doe</h4>
+            <span>25 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="footer-notif">
+        <h3>View All Email</h3>
+        <span class="ti-angle-right"></span>
+      </div>
+    </div>
+    <div id="m3" class="modal">
+      <div class="menu-container">
+        <div class="menu-list">
+          <span class="ti-settings"></span>
+          <p>Setting</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-user"></span>
+          <p>Profile</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-email"></span>
+          <p>Messges</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-power-off"></span>
+          <p>Logout</p>
+        </div>
+      </div>
+    </div>
+	</div>
+
+  <section>
+    <div class="content">
+      <div class="menu-chat">
+        <div class="search">
+          <input type="text" name="search" placeholder="Search contacts..." value="">
+        </div>
+        <div class="contact-list">
+          <div class="contact">
+            <div class="photo"></div>
+            <div class="text-contact">
+              <h3>John Doe</h3>
+              <p class="green">Online</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-list">
+          <div class="contact">
+            <div class="photo"></div>
+            <div class="text-contact">
+              <h3>Moo Doe</h3>
+              <p class="orange">Away</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-list">
+          <div class="contact">
+            <div class="photo"></div>
+            <div class="text-contact">
+              <h3>Adam Jones</h3>
+              <p class="gray">Online</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-list">
+          <div class="contact">
+            <div class="photo"></div>
+            <div class="text-contact">
+              <h3>Mizo Doe</h3>
+              <p class="red">Busy</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-list">
+          <div class="contact">
+            <div class="photo"></div>
+            <div class="text-contact">
+              <h3>John Doe</h3>
+              <p class="green">Online</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-list">
+          <div class="contact">
+            <div class="photo"></div>
+            <div class="text-contact">
+              <h3>Moo Doe</h3>
+              <p class="orange">Away</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat-wrapper">
+        <div class="chat-title">
+          <div class="title-text">
+            <div class="photo"></div>
+            <div class="text-contact">
+              <h3>John Doe</h3>
+              <p>Typing...</p>
+            </div>
+          </div>
+          <div class="icons">
+            <span class="ti-video-camera"></span>
+            <span class="ti-headphone"></span>
+            <span class="ti-more"></span>
+          </div>
+        </div>
+        <div class="chat">
+          <div id="john">
+            <div class="photo"></div>
+            <div class="dialog-first">
+            <div class="message">
+              <span>10:00 AM</span>
+              <p>Lorem Ipsum is simply dummy text of</p>
+            </div>
+            <div class="message">
+              <span>10:00 AM</span>
+              <p>the printing and typesetting industry.</p>
+            </div>
+            <div class="message">
+              <span>10:00 AM</span>
+              <p>Lorem Ipsum has been the industry's</p>
+            </div>
+          </div>
+          </div>
+          <div id="moo">
+            <div class="dialog-second">
+              <div class="message">
+                <p>Hello</p>
+                <span>10:00 AM</span>
+              </div>
+              <div class="message">
+                <p>??</p>
+                <span>10:00 AM</span>
+              </div>
+            </div>
+            <div class="photo"></div>
+          </div>
+        </div>
+        <div class="btn">
+          <input type="text" name="say" placeholder="Say something...">
+          <button type="button" name="button"><span class="ti-location-arrow"></span></button>
+        </div>
+      </div>
+      <div class="footer-section">
+        <span>Copyright © 2017 Designed by <a href="https://colorlib.com/polygon/adminator/index.html">Colorlib</a>. All rights reserved.</span>
+        <p>Created by Daria Zolotarova</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script>
+    $(window).on('load', function () {
+      $preloader = $('.loaderArea'),
+        $loader = $preloader.find('.loader');
+      $loader.fadeOut();
+      $preloader.delay(350).fadeOut('slow');
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

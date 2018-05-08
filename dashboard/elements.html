@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UI Elements</title>
+  <link rel="stylesheet" href="css/preloader.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="font/themify-icons.css" rel="stylesheet">
+  <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_elements.css">
+</head>
+
+<body>
+  <div class="loaderArea">
+   <div class="loader"></div>
+  </div>
+  <nav>
+    <div class="left-nav">
+      <div class="logo">
+        <a href="index.html"><span class="ti-star blue"></span></a>
+        <a href="index.html"><p>Logotype</p></a>
+      </div>
+      <div class="menu-list">
+        <div class="list">
+          <a href="index.html" title="Dashboard"><span class="ti-home blue"></span></a>
+          <a class="hidden" href="index.html">Dashboard</a>
+        </div>
+        <div class="list">
+          <a href="email.html" title="Email"><span class="ti-email gray"></span></a>
+          <a class="hidden" href="email.html">Email</a>
+        </div>
+        <div class="list">
+          <a href="compose.html" title="Compose"><span class="ti-share blue"></span></a>
+          <a class="hidden" href="compose.html">Compose</a>
+        </div>
+        <div class="list">
+          <a href="calendar.html" title="Calendar"><span class="ti-calendar orange"></span></a>
+          <a class="hidden" href="calendar.html">Calendar</a>
+        </div>
+        <div class="list">
+          <a href="chat.html" title="Chat"><span class="ti-comment-alt violet"></span></a>
+          <a class="hidden" href="chat.html">Chat</a>
+        </div>
+        <div class="list">
+          <a href="charts.html" title="Charts"><span class="ti-bar-chart violet"></span></a>
+          <a class="hidden" href="charts.html">Charts</a>
+        </div>
+        <div class="list">
+          <a href="forms.html" title="Forms"><span class="ti-pencil blue"></span></a>
+          <a class="hidden" href="forms.html">Forms</a>
+        </div>
+        <div class="list">
+          <a href="elements.html" title="UI Elements"><span class="ti-palette red"></span></a>
+          <a class="hidden" href="elements.html">UI Elements</a>
+        </div>
+      </div>
+    </div>
+    <div class="top-nav">
+      <div class="wrapper-menu">
+        <div class="menu">
+          <span class="ti-menu"></span>
+        </div>
+        <div class="search">
+          <span class="ti-search"></span>
+          <input type="text" placeholder="Search..." name="search" value="">
+        </div>
+      </div>
+      <div class="notification">
+        <div class="bell">
+          <span class="ti-bell" data-modal="#m1"></span>
+        </div>
+        <div class="message">
+          <span class="ti-email" data-modal="#m2"></span>
+        </div>
+        <div class="profile" data-modal="#m3">
+          <div class="icon"></div>
+          <div class="name">
+            <p>John Doe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal-container">
+  	<div id="m1" class="modal">
+  		<div class="title">
+        <span class="ti-bell"></span>
+        <h3>Notification</h3>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>John Doe <span>liked your</span> post</h4>
+          <p>5 mins ago</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>Moo Doe <span>liked your</span> cover image</h4>
+          <p>7 mins ago</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>Lee Doe <span>commented on your</span> video</h4>
+          <p>10 mins ago</p>
+        </div>
+      </div>
+      <div class="footer-notif">
+        <h3>View All Notification</h3>
+        <span class="ti-angle-right"></span>
+      </div>
+  	</div>
+  	<div id="m2" class="modal">
+      <div class="title">
+        <span class="ti-email"></span>
+        <h3>Emails</h3>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>John Doe</h4>
+            <span>5 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>Moo Doe</h4>
+            <span>15 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>Lee Doe</h4>
+            <span>25 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="footer-notif">
+        <h3>View All Email</h3>
+        <span class="ti-angle-right"></span>
+      </div>
+    </div>
+    <div id="m3" class="modal">
+      <div class="menu-container">
+        <div class="menu-list">
+          <span class="ti-settings"></span>
+          <p>Setting</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-user"></span>
+          <p>Profile</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-email"></span>
+          <p>Messges</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-power-off"></span>
+          <p>Logout</p>
+        </div>
+      </div>
+    </div>
+	</div>
+
+  <section>
+    <div class="content">
+      <div class="elements-container">
+        <div class="modal-window">
+          <h3>Modal</h3>
+          <div class="btn-container">
+            <a class="btn" data-modal="#m4">Launch demo modal</a>
+          </div>
+          <div class="modal-container">
+            <div id="m4" class="modal">
+              <h3>Modal Title</h3>
+        			<p>...</p>
+        		  <div class="btn-container">
+                <a class="btn" data-modal="close">Close modal window</a>
+              </div>
+        		</div>
+          </div>
+        </div>
+        <div class="dropdown-container">
+          <h3>Dropdowns</h3>
+          <div class="dropdown" id="no-button-action">
+            <button class="dropbtn">Dropdown button
+              <span class="ti-angle-down"></span>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Action</a>
+              <a href="#">Another action</a>
+              <a href="#">Something else here</a>
+            </div>
+          </div>
+          <div class="dropdown" id="button-action">
+            <div class="btn-action">
+              <h4>Action</h4>
+              <button class="dropbtn">
+                <span class="ti-angle-down"></span>
+              </button>
+            </div>
+            <div class="dropdown-content">
+              <a href="#">Action</a>
+              <a href="#">Another action</a>
+              <a href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="popover-container">
+          <h3>Popover</h3>
+          <div class="popover-wrapper">
+            <a href="#">
+              <h2 class="popover-title">Click to toggle popover</h2>
+            </a>
+            <div class="push popover-content">
+              <div class="title">
+                <h3>Popover title</h3>
+              </div>
+              <p>And here's some amazing content. It's very engaging. Right?</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="tooltip-container">
+          <h3>Tooltips</h3>
+          <div class="btn-container">
+            <a href="#" class="btn tooltip" id="top" data-tooltip="Top">Tooltip on top</a>
+            <a href="#" class="btn tooltip" id="right" data-tooltip="Right">Tooltip on right</a>
+            <a href="#" class="btn tooltip" id="bottom" data-tooltip="Bottom">Tooltip on bottom</a>
+            <a href="#" class="btn tooltip" id="left" data-tooltip="Left">Tooltip on left</a>
+          </div>
+        </div>
+        <div class="list-container">
+          <h3>List Group</h3>
+          <div class="list-menu">
+            <ul>
+              <li class="active">Cras justo odio</li>
+              <li>Dapibus ac facilisis in</li>
+              <li>Morbi leo risus</li>
+              <li>Porta ac consectetur ac</li>
+              <li class="dis">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section">
+        <span>Copyright © 2017 Designed by <a href="https://colorlib.com/polygon/adminator/index.html">Colorlib</a>. All rights reserved.</span>
+        <p>Created by Daria Zolotarova</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script>
+    $(window).on('load', function () {
+      $preloader = $('.loaderArea'),
+        $loader = $preloader.find('.loader');
+      $loader.fadeOut();
+      $preloader.delay(350).fadeOut('slow');
+    });
+  </script>
+  <script src="js/code/highcharts.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/main_elements.js"></script>
+</body>
+</html>

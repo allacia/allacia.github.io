@@ -1,0 +1,530 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/preloader.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="font/themify-icons.css" rel="stylesheet">
+  <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="loaderArea">
+   <div class="loader"></div>
+  </div>
+
+  <nav>
+    <div class="left-nav">
+      <div class="logo">
+        <a href="index.html"><span class="ti-star blue"></span></a>
+        <a href="index.html"><p>Logotype</p></a>
+      </div>
+      <div class="menu-list">
+        <div class="list">
+          <a href="index.html" title="Dashboard"><span class="ti-home blue"></span></a>
+          <a class="hidden" href="index.html">Dashboard</a>
+        </div>
+        <div class="list">
+          <a href="email.html" title="Email"><span class="ti-email gray"></span></a>
+          <a class="hidden" href="email.html">Email</a>
+        </div>
+        <div class="list">
+          <a href="compose.html" title="Compose"><span class="ti-share blue"></span></a>
+          <a class="hidden" href="compose.html">Compose</a>
+        </div>
+        <div class="list">
+          <a href="calendar.html" title="Calendar"><span class="ti-calendar orange"></span></a>
+          <a class="hidden" href="calendar.html">Calendar</a>
+        </div>
+        <div class="list">
+          <a href="chat.html" title="Chat"><span class="ti-comment-alt violet"></span></a>
+          <a class="hidden" href="chat.html">Chat</a>
+        </div>
+        <div class="list">
+          <a href="charts.html" title="Charts"><span class="ti-bar-chart violet"></span></a>
+          <a class="hidden" href="charts.html">Charts</a>
+        </div>
+        <div class="list">
+          <a href="forms.html" title="Forms"><span class="ti-pencil blue"></span></a>
+          <a class="hidden" href="forms.html">Forms</a>
+        </div>
+        <div class="list">
+          <a href="elements.html" title="UI Elements"><span class="ti-palette red"></span></a>
+          <a class="hidden" href="elements.html">UI Elements</a>
+        </div>
+      </div>
+    </div>
+    <div class="top-nav">
+      <div class="wrapper-menu">
+        <div class="menu">
+          <span class="ti-menu"></span>
+        </div>
+        <div class="search">
+          <span class="ti-search"></span>
+          <input type="text" placeholder="Search..." name="search" value="">
+        </div>
+      </div>
+      <div class="notification">
+        <div class="bell">
+          <span class="ti-bell" data-modal="#m1"></span>
+        </div>
+        <div class="message">
+          <span class="ti-email" data-modal="#m2"></span>
+        </div>
+        <div class="profile" data-modal="#m3">
+          <div class="icon"></div>
+          <div class="name">
+            <p>John Doe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal-container">
+  	<div id="m1" class="modal">
+  		<div class="title">
+        <span class="ti-bell"></span>
+        <h3>Notification</h3>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>John Doe <span>liked your</span> post</h4>
+          <p>5 mins ago</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>Moo Doe <span>liked your</span> cover image</h4>
+          <p>7 mins ago</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>Lee Doe <span>commented on your</span> video</h4>
+          <p>10 mins ago</p>
+        </div>
+      </div>
+      <div class="footer-notif">
+        <h3>View All Notification</h3>
+        <span class="ti-angle-right"></span>
+      </div>
+  	</div>
+  	<div id="m2" class="modal">
+      <div class="title">
+        <span class="ti-email"></span>
+        <h3>Emails</h3>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>John Doe</h4>
+            <span>5 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>Moo Doe</h4>
+            <span>15 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>Lee Doe</h4>
+            <span>25 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="footer-notif">
+        <h3>View All Email</h3>
+        <span class="ti-angle-right"></span>
+      </div>
+    </div>
+    <div id="m3" class="modal">
+      <div class="menu-container">
+        <div class="menu-list">
+          <span class="ti-settings"></span>
+          <p>Setting</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-user"></span>
+          <p>Profile</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-email"></span>
+          <p>Messages</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-power-off"></span>
+          <p>Logout</p>
+        </div>
+      </div>
+    </div>
+	</div>
+
+  <section class="">
+    <div class="content">
+      <div class="stats-container">
+        <div class="stats">
+          <h3>Total Visits</h3>
+          <div class="details">
+            <span class="ti-bar-chart green tooltip" data-tooltip="+10%"></span>
+            <p class="green green-bg">+10%</p>
+          </div>
+        </div>
+        <div class="stats">
+          <h3>Total Page Views</h3>
+          <div class="details">
+            <span class="ti-bar-chart violet tooltip" data-tooltip="-7%"></span>
+            <p class="red red-bg">-7%</p>
+          </div>
+        </div>
+        <div class="stats">
+          <h3>Unique Visitor</h3>
+          <div class="details">
+            <span class="ti-bar-chart blue tooltip" data-tooltip="~12%"></span>
+            <p class="violet violet-bg">~12%</p>
+          </div>
+        </div>
+        <div class="stats">
+          <h3>Bounce Rate</h3>
+          <div class="details">
+            <span class="ti-bar-chart red tooltip" data-tooltip="33%"></span>
+            <p class="blue blue-bg">33%</p>
+          </div>
+        </div>
+      </div>
+      <div class="map-container">
+        <div class="map" id="mapid">
+          <div id='map'></div>
+        </div>
+        <div class="progress-bar">
+          <div class="linear-container">
+            <div class="linear">
+              <h3>100k</h3>
+              <div class="text">
+                <span>Visitors From USA</span>
+                <p>50%</p>
+              </div>
+              <div class="graph">
+                <div id="violet"></div>
+              </div>
+            </div>
+            <div class="linear">
+              <h3>1M</h3>
+              <div class="text">
+                <span>Visitors From Europe</span>
+                <p>80%</p>
+              </div>
+              <div class="graph">
+                <div id="green"></div>
+              </div>
+            </div>
+            <div class="linear">
+              <h3>450k</h3>
+              <div class="text">
+                <span>Visitors From Australia</span>
+                <p>40%</p>
+              </div>
+              <div class="graph">
+                <div id="blue"></div>
+              </div>
+            </div>
+            <div class="linear">
+              <h3>1B</h3>
+              <div class="text">
+                <span>Visitors From India</span>
+                <p>90%</p>
+              </div>
+              <div class="graph">
+                <div id="gray"></div>
+              </div>
+            </div>
+          </div>
+          <div class="circular-container">
+            <div class="circular" id="users">
+              <div class="progress">
+                <div class="left-bar"></div>
+								<div class="right-bar"></div>
+								<div class="mask"></div>
+								<div class="value">75%</div>
+              </div>
+              <p>New Users</p>
+            </div>
+            <div class="circular" id="purchases">
+              <div class="progress">
+                <div class="left-bar"></div>
+								<div class="right-bar"></div>
+								<div class="mask"></div>
+								<div class="value">50%</div>
+              </div>
+              <p>New Purchases</p>
+            </div>
+            <div class="circular" id="rate">
+              <div class="progress">
+                <div class="left-bar"></div>
+								<div class="right-bar"></div>
+								<div class="mask"></div>
+								<div class="value">90%</div>
+              </div>
+              <p>Bounce Rate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="another-container">
+        <div class="monthly-stats">
+          <h3>Monthly Stats</h3>
+          <div id="container" style="min-width: 250px; height: 250px; margin: 0 auto"></div>
+        </div>
+        <div class="todo-list">
+          <h3>Todo List</h3>
+          <div class="input-group">
+            <div class="input-list">
+              <input type="checkbox" class="checkbox" id="checkbox1" />
+              <label for="checkbox1">Call John for Dinner</label>
+            </div>
+            <div class="input-list">
+              <input type="checkbox" class="checkbox" id="checkbox2" />
+              <label for="checkbox2">Book Boss Flight</label>
+              <p id="green">2 Days</p>
+            </div>
+            <div class="input-list">
+              <input type="checkbox" class="checkbox" id="checkbox3" />
+              <label for="checkbox3">Hit the Gym</label>
+              <p id="red">3 Minutes</p>
+            </div>
+            <div class="input-list">
+              <input type="checkbox" class="checkbox" id="checkbox4" />
+              <label for="checkbox4">Give Purchase Report</label>
+              <p id="yellow">not important</p>
+            </div>
+            <div class="input-list">
+              <input type="checkbox" class="checkbox" id="checkbox5" />
+              <label for="checkbox5">Watch Game of Thrones Episode</label>
+              <p id="blue">Tomorrow</p>
+            </div>
+            <div class="input-list">
+              <input type="checkbox" class="checkbox" id="checkbox6" />
+              <label for="checkbox6">Give Purchase report</label>
+              <p id="green">Done</p>
+            </div>
+          </div>
+        </div>
+        <div class="table">
+          <h3>Sales Report</h3>
+          <div class="title">
+            <h4>November 2017</h4>
+            <p>$6,000</p>
+            <h5>Sales Report</h5>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Status</td>
+                <td>Date</td>
+                <td>Price</td>
+              </tr>
+            </thead>
+            <tr>
+              <td>Item #1 Name</td>
+              <td><p id="red">Unavailable</p></td>
+              <td>Nov 18</td>
+              <td class="green">$12</td>
+            </tr>
+            <tr>
+              <td>Item #2 Name</td>
+              <td><p id="violet">New</p></td>
+              <td>Nov 19</td>
+              <td class="blue">$34</td>
+            </tr>
+            <tr>
+              <td>Item #3 Name</td>
+              <td><p id="red">New</p></td>
+              <td>Nov 20</td>
+              <td class="red">-$45</td>
+            </tr>
+            <tr>
+              <td>Item #4 Name</td>
+              <td><p id="green">Unavailable</p></td>
+              <td>Nov 21</td>
+              <td class="green">$65</td>
+            </tr>
+            <tr>
+              <td>Item #5 Name</td>
+              <td><p id="red">Used</p></td>
+              <td>Nov 22</td>
+              <td class="green">$78</td>
+            </tr>
+            <tr>
+              <td>Item #6 Name</td>
+              <td><p id="red">Used</p></td>
+              <td>Nov 23</td>
+              <td class="red">-$88</td>
+            </tr>
+            <tr>
+              <td>Item #7 Name</td>
+              <td><p id="red">Old</p></td>
+              <td>Nov 24</td>
+              <td class="green">$56</td>
+            </tr>
+          </table>
+          <div class="link">
+            <a href="#">Check all the sales</a>
+          </div>
+        </div>
+        <div class="weather-container">
+          <h3>Weather</h3>
+          <div class="weather">
+            <p class="access">No access to GPS...</p>
+          </div>
+        </div>
+        <div class="quick-chat-wrapper">
+          <h3>Quick Chat</h3>
+          <div class="chat">
+            <div id="john">
+              <div class="photo"></div>
+              <div class="dialog-first">
+              <div class="message">
+                <span>10:00AM</span>
+                <p>Lorem Ipsum is simply dummy text of</p>
+              </div>
+              <div class="message">
+                <span>10:00AM</span>
+                <p>the printing and typesetting industry.</p>
+              </div>
+              <div class="message">
+                <span>10:00AM</span>
+                <p>Lorem Ipsum has been the industry's</p>
+              </div>
+            </div>
+            </div>
+            <div id="moo">
+              <div class="dialog-second">
+                <div class="message">
+                  <p>Hello</p>
+                  <span>10:00AM</span>
+                </div>
+                <div class="message">
+                  <p>??</p>
+                  <span>10:00AM</span>
+                </div>
+              </div>
+              <div class="photo"></div>
+            </div>
+          </div>
+          <div class="btn">
+            <input type="text" name="say" placeholder="Say something...">
+            <button type="button" name="button"><span class="ti-location-arrow"></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section">
+        <span>Copyright © 2017 Designed by <a href="https://colorlib.com/polygon/adminator/index.html">Colorlib</a>. All rights reserved.</span>
+        <p>Created by Daria Zolotarova</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script>
+    $(window).on('load', function () {
+      $preloader = $('.loaderArea'),
+        $loader = $preloader.find('.loader');
+      $loader.fadeOut();
+      $preloader.delay(350).fadeOut('slow');
+    });
+  </script>
+  <script src="js/api.js"></script>
+  <script src="js/code/highcharts.js"></script>
+  <script>
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'area',
+        spacingBottom: 30
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: '',
+        floating: true,
+        align: 'right',
+        verticalAlign: 'bottom',
+        y: 15
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        x: 150,
+        y: 150,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+    },
+    xAxis: {
+        categories: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August']
+    },
+    yAxis: {
+        title: {
+            text: ''
+        },
+        labels: {
+            formatter: function () {
+                return this.value;
+            }
+        }
+    },
+    tooltip: {
+        formatter: function () {
+            return '<b>' + this.series.name + '</b><br/>' +
+                this.x + ': ' + this.y;
+        }
+    },
+    plotOptions: {
+        area: {
+            fillOpacity: 0.4
+        }
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Users',
+        data: [24, 50, 110, 110, 96, 103, 128, 116]
+    }]
+});
+		</script>
+  <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+  <script>
+  var startPoint = [46.4864, 30.7395];
+
+        var mymap = L.map('mapid').setView(startPoint, 12);
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          maxZoom: 18,
+          id: 'mapbox.outdoors',
+          accessToken: 'pk.eyJ1IjoiYXBlb3JpbiIsImEiOiJjajliY3M5amExZjJtMzJwOXV5Ym5kdGYyIn0.9J_Lp21ERWsd0dwGdfmhyQ'
+        }).addTo(mymap);
+</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

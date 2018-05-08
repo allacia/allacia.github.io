@@ -1,0 +1,163 @@
+// "out": "../css/style_charts.css"
+@color-border: rgba(0,0,0,.0625);
+
+section {
+  height: 200vh;
+  .content {
+    .charts-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      .line-chart {
+        width: 48%;
+        margin-right: 20px;
+        background-color: #fff;
+        border: 1px solid @color-border;
+        h3 {
+          padding: 20px;
+          font-size: 1em;
+          font-weight: 300;
+        }
+        #container-line {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin: 20px;
+        }
+      }
+      .area-chart {
+        width: 48%;
+        margin-right: 20px;
+        background-color: #fff;
+        border: 1px solid @color-border;
+        h3 {
+          padding: 20px;
+          font-size: 1em;
+          font-weight: 300;
+        }
+        #container-area {
+          margin: 20px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+        }
+      }
+      .scatter-chart {
+        width: 48%;
+        margin-top: 20px;
+        margin-right: 20px;
+        background-color: #fff;
+        border: 1px solid @color-border;
+        h3 {
+          padding: 20px;
+          font-size: 1em;
+          font-weight: 300;
+        }
+        #container-scatter {
+          margin: 20px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+        }
+      }
+      .bar-chart {
+        width: 48%;
+        margin-top: 20px;
+        margin-right: 20px;
+        background-color: #fff;
+        border: 1px solid @color-border;
+        h3 {
+          padding: 20px;
+          font-size: 1em;
+          font-weight: 300;
+        }
+        #container-bar {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin: 20px;
+        }
+      }
+      .jquery-sparkline {
+        width: 48%;
+        margin-top: 20px;
+        margin-right: 20px;
+        background-color: #fff;
+        border: 1px solid @color-border;
+        h3 {
+          padding: 20px;
+          font-size: 1em;
+          font-weight: 300;
+        }
+        .sparkline {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          margin: 0 20px;
+          padding: 10px 20px;
+          border-bottom: 1px solid @color-border;
+          p {
+            font-weight: 100;
+          }
+          &:last-child {
+            padding-bottom: 20px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  section {
+    height: 350vh;
+    .content {
+      .charts-container {
+        display: block;
+        .line-chart, .area-chart, .scatter-chart, .bar-chart, .jquery-sparkline {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 960px) {
+  section {
+    height: 420vh;
+  }
+}
+@media (max-width: 400px) {
+  section {
+    height: 450vh;
+  }
+}
+@media (max-width: 320px) {
+  section {
+    height: 500vh;
+  }
+}

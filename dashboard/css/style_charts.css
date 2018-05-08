@@ -1,0 +1,159 @@
+section {
+  height: 200vh;
+}
+section .content .charts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+section .content .charts-container .line-chart {
+  width: 48%;
+  margin-right: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .charts-container .line-chart h3 {
+  padding: 20px;
+  font-size: 1em;
+  font-weight: 300;
+}
+section .content .charts-container .line-chart #container-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 20px;
+}
+section .content .charts-container .area-chart {
+  width: 48%;
+  margin-right: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .charts-container .area-chart h3 {
+  padding: 20px;
+  font-size: 1em;
+  font-weight: 300;
+}
+section .content .charts-container .area-chart #container-area {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+section .content .charts-container .scatter-chart {
+  width: 48%;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .charts-container .scatter-chart h3 {
+  padding: 20px;
+  font-size: 1em;
+  font-weight: 300;
+}
+section .content .charts-container .scatter-chart #container-scatter {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+section .content .charts-container .bar-chart {
+  width: 48%;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .charts-container .bar-chart h3 {
+  padding: 20px;
+  font-size: 1em;
+  font-weight: 300;
+}
+section .content .charts-container .bar-chart #container-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 20px;
+}
+section .content .charts-container .jquery-sparkline {
+  width: 48%;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .charts-container .jquery-sparkline h3 {
+  padding: 20px;
+  font-size: 1em;
+  font-weight: 300;
+}
+section .content .charts-container .jquery-sparkline .sparkline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 20px;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .charts-container .jquery-sparkline .sparkline p {
+  font-weight: 100;
+}
+section .content .charts-container .jquery-sparkline .sparkline:last-child {
+  padding-bottom: 20px;
+  border: none;
+}
+@media (max-width: 1024px) {
+  section {
+    height: 350vh;
+  }
+  section .content .charts-container {
+    display: block;
+  }
+  section .content .charts-container .line-chart,
+  section .content .charts-container .area-chart,
+  section .content .charts-container .scatter-chart,
+  section .content .charts-container .bar-chart,
+  section .content .charts-container .jquery-sparkline {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 960px) {
+  section {
+    height: 420vh;
+  }
+}
+@media (max-width: 400px) {
+  section {
+    height: 450vh;
+  }
+}
+@media (max-width: 320px) {
+  section {
+    height: 500vh;
+  }
+}

@@ -1,0 +1,625 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendar</title>
+  <link rel="stylesheet" href="css/preloader.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="font/themify-icons.css" rel="stylesheet">
+  <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_calendar.css">
+</head>
+
+<body>
+  <div class="loaderArea">
+   <div class="loader"></div>
+  </div>
+
+  <nav>
+    <div class="left-nav">
+      <div class="logo">
+        <a href="index.html"><span class="ti-star blue"></span></a>
+        <a href="index.html"><p>Logotype</p></a>
+      </div>
+      <div class="menu-list">
+        <div class="list">
+          <a href="index.html" title="Dashboard"><span class="ti-home blue"></span></a>
+          <a class="hidden" href="index.html">Dashboard</a>
+        </div>
+        <div class="list">
+          <a href="email.html" title="Email"><span class="ti-email gray"></span></a>
+          <a class="hidden" href="email.html">Email</a>
+        </div>
+        <div class="list">
+          <a href="compose.html" title="Compose"><span class="ti-share blue"></span></a>
+          <a class="hidden" href="compose.html">Compose</a>
+        </div>
+        <div class="list">
+          <a href="calendar.html" title="Calendar"><span class="ti-calendar orange"></span></a>
+          <a class="hidden" href="calendar.html">Calendar</a>
+        </div>
+        <div class="list">
+          <a href="chat.html" title="Chat"><span class="ti-comment-alt violet"></span></a>
+          <a class="hidden" href="chat.html">Chat</a>
+        </div>
+        <div class="list">
+          <a href="charts.html" title="Charts"><span class="ti-bar-chart violet"></span></a>
+          <a class="hidden" href="charts.html">Charts</a>
+        </div>
+        <div class="list">
+          <a href="forms.html" title="Forms"><span class="ti-pencil blue"></span></a>
+          <a class="hidden" href="forms.html">Forms</a>
+        </div>
+        <div class="list">
+          <a href="elements.html" title="UI Elements"><span class="ti-palette red"></span></a>
+          <a class="hidden" href="elements.html">UI Elements</a>
+        </div>
+      </div>
+    </div>
+    <div class="top-nav">
+      <div class="wrapper-menu">
+        <div class="menu">
+          <span class="ti-menu"></span>
+        </div>
+        <div class="search">
+          <span class="ti-search"></span>
+          <input type="text" placeholder="Search..." name="search" value="">
+        </div>
+      </div>
+      <div class="notification">
+        <div class="bell">
+          <span class="ti-bell" data-modal="#m1"></span>
+        </div>
+        <div class="message">
+          <span class="ti-email" data-modal="#m2"></span>
+        </div>
+        <div class="profile" data-modal="#m3">
+          <div class="icon"></div>
+          <div class="name">
+            <p>John Doe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal-container">
+  	<div id="m1" class="modal">
+  		<div class="title">
+        <span class="ti-bell"></span>
+        <h3>Notification</h3>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>John Doe <span>liked your</span> post</h4>
+          <p>5 mins ago</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>Moo Doe <span>liked your</span> cover image</h4>
+          <p>7 mins ago</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>Lee Doe <span>commented on your</span> video</h4>
+          <p>10 mins ago</p>
+        </div>
+      </div>
+      <div class="footer-notif">
+        <h3>View All Notification</h3>
+        <span class="ti-angle-right"></span>
+      </div>
+  	</div>
+  	<div id="m2" class="modal">
+      <div class="title">
+        <span class="ti-email"></span>
+        <h3>Emails</h3>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>John Doe</h4>
+            <span>5 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>Moo Doe</h4>
+            <span>15 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>Lee Doe</h4>
+            <span>25 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="footer-notif">
+        <h3>View All Email</h3>
+        <span class="ti-angle-right"></span>
+      </div>
+    </div>
+    <div id="m3" class="modal">
+      <div class="menu-container">
+        <div class="menu-list">
+          <span class="ti-settings"></span>
+          <p>Setting</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-user"></span>
+          <p>Profile</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-email"></span>
+          <p>Messges</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-power-off"></span>
+          <p>Logout</p>
+        </div>
+      </div>
+    </div>
+	</div>
+
+  <section>
+    <div class="content">
+      <div class="calendar-container">
+        <div class="memo">
+          <div class="title-day">
+            <div class="date">
+              <p class="num">01<span>st</span></p>
+              <p class="sunday">Sunday</p>
+            </div>
+            <div class="btn">
+              <button type="button" name="button"><span class="ti-plus"></span></button>
+            </div>
+          </div>
+          <div class="event-container">
+            <div class="text-event">
+              <span class="ti-alarm-clock red"></span>
+              <div class="text">
+                <h4>All Day Event</h4>
+                <p>Apr 01 - <span>Website Development</span></p>
+              </div>
+            </div>
+            <div class="event-edit">
+              <span class="ti-pencil violet"></span>
+              <span class="ti-trash red"></span>
+            </div>
+          </div>
+          <div class="event-container">
+            <div class="text-event">
+              <span class="ti-alarm-clock blue"></span>
+              <div class="text">
+                <h4>All Day Event</h4>
+                <p>Apr 01 - <span>Website Development</span></p>
+              </div>
+            </div>
+            <div class="event-edit">
+              <span class="ti-pencil violet"></span>
+              <span class="ti-trash red"></span>
+            </div>
+          </div>
+          <div class="event-container">
+            <div class="text-event">
+              <span class="ti-alarm-clock violet"></span>
+              <div class="text">
+                <h4>All Day Event</h4>
+                <p>Apr 01 - <span>Website Development</span></p>
+              </div>
+            </div>
+            <div class="event-edit">
+              <span class="ti-pencil violet"></span>
+              <span class="ti-trash red"></span>
+            </div>
+          </div>
+          <div class="event-container">
+            <div class="text-event">
+              <span class="ti-alarm-clock green"></span>
+              <div class="text">
+                <h4>All Day Event</h4>
+                <p>Apr 01 - <span>Website Development</span></p>
+              </div>
+            </div>
+            <div class="event-edit">
+              <span class="ti-pencil violet"></span>
+              <span class="ti-trash red"></span>
+            </div>
+          </div>
+        </div>
+        <div class="calendar">
+          <div class="title-calendar">
+            <div class="btn-date">
+              <a class="active" data-tab="#tab1">month</a>
+              <a data-tab="#tab2">week</a>
+              <a data-tab="#tab3">day</a>
+            </div>
+            <h2 id="tab1" class="active">April 2018</h2>
+            <h2 id="tab2">Apr 1-7, 2018</h2>
+            <h2 id="tab3">April 1, 2018</h2>
+            <div class="btn-today">
+              <a id="today" href="#">today</a>
+              <div class="arrow">
+                <a href="#"><span class="ti-angle-left"></span></a>
+                <a href="#"><span class="ti-angle-right"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="body-calendar">
+            <table id="tab1" class="active">
+              <thead>
+                <tr>
+                  <td>sun</td>
+                  <td>mon</td>
+                  <td>tue</td>
+                  <td>wed</td>
+                  <td>thu</td>
+                  <td>fri</td>
+                  <td>sat</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1<p class="blue">Birthday</p></td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12<p class="blue">Event</p></td>
+                  <td>13</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21<p class="blue">Walking</p></td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24<p class="blue">Birthday</p></td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>29</td>
+                  <td>30</td>
+                  <td class="may">1</td>
+                  <td class="may">2</td>
+                  <td class="may">3</td>
+                  <td class="may">4</td>
+                  <td class="may">5</td>
+                </tr>
+              </tbody>
+            </table>
+            <table id="tab2">
+              <thead>
+                <tr>
+                  <td></td>
+                  <td>sun 4/1</td>
+                  <td>mon 4/2</td>
+                  <td>tue 4/3</td>
+                  <td>wed 4/4</td>
+                  <td>thu 4/5</td>
+                  <td>fri 4/6</td>
+                  <td>sat 4/7</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>all day</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6am</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8am</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>9am</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10am</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11am</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12pm</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1pm</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2pm</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3pm</td>
+                  <td><p class="blue">Birthday</p></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4pm</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5pm</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6pm</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>7pm</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8pm</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>9pm</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10pm</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11pm</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <table id="tab3">
+              <thead>
+                <tr>
+                  <td colspan="2">Sunday</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>all day</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6am</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8am</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>9am</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10am</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11am</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12pm</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1pm</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2pm</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3pm</td>
+                  <td><p class="blue">Birthday</p></td>
+                </tr>
+                <tr>
+                  <td>4pm</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5pm</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6pm</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>7pm</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8pm</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>9pm</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10pm</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11pm</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section">
+        <span>Copyright © 2017 Designed by <a href="https://colorlib.com/polygon/adminator/index.html">Colorlib</a>. All rights reserved.</span>
+        <p>Created by Daria Zolotarova</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script>
+    $(window).on('load', function () {
+      $preloader = $('.loaderArea'),
+        $loader = $preloader.find('.loader');
+      $loader.fadeOut();
+      $preloader.delay(350).fadeOut('slow');
+    });
+  </script>
+  <script src="js/main_calendar.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email</title>
+  <link rel="stylesheet" href="css/preloader.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="font/themify-icons.css" rel="stylesheet">
+  <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_email.css">
+</head>
+
+<body>
+  <div class="loaderArea">
+   <div class="loader"></div>
+  </div>
+
+  <nav>
+    <div class="left-nav">
+      <div class="logo">
+        <a href="index.html"><span class="ti-star blue"></span></a>
+        <a href="index.html"><p>Logotype</p></a>
+      </div>
+      <div class="menu-list">
+        <div class="list">
+          <a href="index.html" title="Dashboard"><span class="ti-home blue"></span></a>
+          <a class="hidden" href="index.html">Dashboard</a>
+        </div>
+        <div class="list">
+          <a href="email.html" title="Email"><span class="ti-email gray"></span></a>
+          <a class="hidden" href="email.html">Email</a>
+        </div>
+        <div class="list">
+          <a href="compose.html" title="Compose"><span class="ti-share blue"></span></a>
+          <a class="hidden" href="compose.html">Compose</a>
+        </div>
+        <div class="list">
+          <a href="calendar.html" title="Calendar"><span class="ti-calendar orange"></span></a>
+          <a class="hidden" href="calendar.html">Calendar</a>
+        </div>
+        <div class="list">
+          <a href="chat.html" title="Chat"><span class="ti-comment-alt violet"></span></a>
+          <a class="hidden" href="chat.html">Chat</a>
+        </div>
+        <div class="list">
+          <a href="charts.html" title="Charts"><span class="ti-bar-chart violet"></span></a>
+          <a class="hidden" href="charts.html">Charts</a>
+        </div>
+        <div class="list">
+          <a href="forms.html" title="Forms"><span class="ti-pencil blue"></span></a>
+          <a class="hidden" href="forms.html">Forms</a>
+        </div>
+        <div class="list">
+          <a href="elements.html" title="UI Elements"><span class="ti-palette red"></span></a>
+          <a class="hidden" href="elements.html">UI Elements</a>
+        </div>
+      </div>
+    </div>
+    <div class="top-nav">
+      <div class="wrapper-menu">
+        <div class="menu">
+          <span class="ti-menu"></span>
+        </div>
+        <div class="search">
+          <span class="ti-search"></span>
+          <input type="text" placeholder="Search..." name="search" value="">
+        </div>
+      </div>
+      <div class="notification">
+        <div class="bell">
+          <span class="ti-bell" data-modal="#m1"></span>
+        </div>
+        <div class="message">
+          <span class="ti-email" data-modal="#m2"></span>
+        </div>
+        <div class="profile" data-modal="#m3">
+          <div class="icon"></div>
+          <div class="name">
+            <p>John Doe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal-container">
+  	<div id="m1" class="modal">
+  		<div class="title">
+        <span class="ti-bell"></span>
+        <h3>Notification</h3>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>John Doe <span>liked your</span> post</h4>
+          <p>5 mins ago</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>Moo Doe <span>liked your</span> cover image</h4>
+          <p>7 mins ago</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>Lee Doe <span>commented on your</span> video</h4>
+          <p>10 mins ago</p>
+        </div>
+      </div>
+      <div class="footer-notif">
+        <h3>View All Notification</h3>
+        <span class="ti-angle-right"></span>
+      </div>
+  	</div>
+  	<div id="m2" class="modal">
+      <div class="title">
+        <span class="ti-email"></span>
+        <h3>Emails</h3>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>John Doe</h4>
+            <span>5 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>Moo Doe</h4>
+            <span>15 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>Lee Doe</h4>
+            <span>25 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="footer-notif">
+        <h3>View All Email</h3>
+        <span class="ti-angle-right"></span>
+      </div>
+    </div>
+    <div id="m3" class="modal">
+      <div class="menu-container">
+        <div class="menu-list">
+          <span class="ti-settings"></span>
+          <p>Setting</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-user"></span>
+          <p>Profile</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-email"></span>
+          <p>Messges</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-power-off"></span>
+          <p>Logout</p>
+        </div>
+      </div>
+    </div>
+	</div>
+
+  <section>
+    <div class="content">
+      <div class="email-menu">
+        <div class="new-message">
+          <button type="button" name="button">New message</button>
+        </div>
+        <div class="links-email">
+          <div class="link">
+            <span class="ti-email"></span>
+            <h3>Inbox</h3>
+            <p class="violet violet-bg">+99</p>
+          </div>
+          <div class="link">
+            <span class="ti-share"></span>
+            <h3>Sent</h3>
+            <p class="green green-bg">12</p>
+          </div>
+          <div class="link">
+            <span class="ti-star"></span>
+            <h3>Important</h3>
+            <p class="blue blue-bg">3</p>
+          </div>
+          <div class="link">
+            <span class="ti-file"></span>
+            <h3>Drafts</h3>
+            <p class="orange orange-bg">5</p>
+          </div>
+          <div class="link">
+            <span class="ti-alert"></span>
+            <h3>Spam</h3>
+            <p class="red red-bg">1</p>
+          </div>
+          <div class="link">
+            <span class="ti-trash"></span>
+            <h3>Trash</h3>
+            <p class="red red-bg">+99</p>
+          </div>
+        </div>
+      </div>
+      <div class="message-container">
+        <div class="btn">
+          <div class="btn-left">
+            <a href="#"><span class="ti-folder"></span></a>
+            <a href="#"><span class="ti-tag"></span></a>
+            <a href="#"><span class="ti-more-alt"></span></a>
+          </div>
+          <div class="btn-right">
+            <a href="#"><span class="ti-angle-left"></span></a>
+            <a href="#"><span class="ti-angle-right"></span></a>
+          </div>
+        </div>
+        <div class="search">
+          <input type="text" name="search" placeholder="Search..." value="">
+        </div>
+        <div class="messages">
+          <div class="message">
+            <div class="title">
+              <h4>John Doe</h4>
+              <p>5 mins ago</p>
+            </div>
+            <h3>Title Goes Here</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing e...</p>
+          </div>
+          <div class="message">
+            <div class="title">
+              <h4>John Doe</h4>
+              <p>5 mins ago</p>
+            </div>
+            <h3>Title Goes Here</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing e...</p>
+          </div>
+          <div class="message">
+            <div class="title">
+              <h4>John Doe</h4>
+              <p>5 mins ago</p>
+            </div>
+            <h3>Title Goes Here</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing e...</p>
+          </div>
+          <div class="message">
+            <div class="title">
+              <h4>John Doe</h4>
+              <p>5 mins ago</p>
+            </div>
+            <h3>Title Goes Here</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing e...</p>
+          </div>
+          <div class="message">
+            <div class="title">
+              <h4>John Doe</h4>
+              <p>5 mins ago</p>
+            </div>
+            <h3>Title Goes Here</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing e...</p>
+          </div>
+        </div>
+      </div>
+      <div class="big-message">
+        <div class="title-name">
+          <div class="icon"></div>
+          <div class="title">
+            <p class="date">Nov, 02 2017</p>
+            <p class="name">John Doe</p>
+            <p class="email">To: email@gmail.com</p>
+          </div>
+          <div class="red-btn">
+            <a href="#"><span class="ti-share-alt"></span></a>
+          </div>
+        </div>
+        <div class="text-message">
+          <h3>Title of this email goes here</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+      </div>
+      <div class="footer-section">
+        <span>Copyright © 2017 Designed by <a href="https://colorlib.com/polygon/adminator/index.html">Colorlib</a>. All rights reserved.</span>
+        <p>Created by Daria Zolotarova</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script>
+    $(window).on('load', function () {
+      $preloader = $('.loaderArea'),
+        $loader = $preloader.find('.loader');
+      $loader.fadeOut();
+      $preloader.delay(350).fadeOut('slow');
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

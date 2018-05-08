@@ -1,0 +1,259 @@
+section {
+  height: 80vh;
+  padding-left: 0;
+  padding-right: 0;
+}
+section .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -20px;
+}
+section .content .menu-chat {
+  width: 20%;
+  height: 80vh;
+  background-color: #fff;
+  border-right: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .menu-chat .search {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .menu-chat .search input[type="text"] {
+  width: 70%;
+  padding: 20px;
+  font-weight: 100;
+  border: none;
+  outline: none;
+}
+section .content .menu-chat .contact-list .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0625);
+  cursor: pointer;
+}
+section .content .menu-chat .contact-list .contact:hover {
+  background-color: #f9f9f9;
+}
+section .content .menu-chat .contact-list .contact .photo {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 100%;
+  background-color: #ccc;
+}
+section .content .menu-chat .contact-list .contact .text-contact h3 {
+  font-size: .8em;
+}
+section .content .menu-chat .contact-list .contact .text-contact p {
+  font-size: .7em;
+}
+section .content .chat-wrapper {
+  width: 80%;
+  height: 80hv;
+  padding: 20px;
+  background-color: #fff;
+}
+section .content .chat-wrapper .chat-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+section .content .chat-wrapper .chat-title .title-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+section .content .chat-wrapper .chat-title .title-text .photo {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 100%;
+  background-color: #ccc;
+}
+section .content .chat-wrapper .chat-title .title-text .text-contact h3 {
+  font-weight: 300;
+}
+section .content .chat-wrapper .chat-title .title-text .text-contact p {
+  font-weight: 100;
+  font-size: .8em;
+  font-style: italic;
+}
+section .content .chat-wrapper .chat-title .icons span {
+  margin: 10px;
+  cursor: pointer;
+}
+section .content .chat-wrapper .chat-title .icons span:hover {
+  color: #45aaf2;
+}
+section .content .chat-wrapper .chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 370px;
+  margin: 20px -20px;
+  padding: 20px;
+  background-color: #f2f3f5;
+}
+section .content .chat-wrapper .chat #john {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section .content .chat-wrapper .chat #john .photo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 100%;
+  background-color: #ccc;
+}
+section .content .chat-wrapper .chat #john .dialog-first .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+  background-color: #fff;
+}
+section .content .chat-wrapper .chat #john .dialog-first .message span {
+  font-size: .7em;
+  font-weight: 100;
+}
+section .content .chat-wrapper .chat #john .dialog-first .message p {
+  margin-left: 10px;
+  font-size: .8em;
+  font-weight: 100;
+}
+section .content .chat-wrapper .chat #moo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+section .content .chat-wrapper .chat #moo .photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #ccc;
+  margin-left: 10px;
+}
+section .content .chat-wrapper .chat #moo .dialog-second .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 5px;
+  margin-bottom: 5px;
+  text-align: right;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+  background-color: #fff;
+}
+section .content .chat-wrapper .chat #moo .dialog-second .message span {
+  font-size: .7em;
+  font-weight: 100;
+}
+section .content .chat-wrapper .chat #moo .dialog-second .message p {
+  margin-right: 10px;
+  font-size: .8em;
+  font-weight: 100;
+}
+section .content .chat-wrapper .btn {
+  position: relative;
+}
+section .content .chat-wrapper .btn input {
+  width: 95%;
+  padding: 10px;
+  color: #72777a;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+section .content .chat-wrapper .btn input:focus {
+  border: 1px solid #2d98da;
+}
+section .content .chat-wrapper .btn button {
+  position: absolute;
+  right: 35px;
+  top: 1px;
+  padding: 8px;
+  border: 1px solid #45aaf2;
+  border-radius: 100%;
+  background-color: #45aaf2;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+section .content .chat-wrapper .btn button:active,
+section .content .chat-wrapper .btn button:hover {
+  background-color: #2d98da;
+}
+section .content .chat-wrapper .btn button span {
+  color: #ffffff;
+}
+@media (max-width: 1280px) {
+  section {
+    height: 105vh;
+  }
+  section .content .menu-chat {
+    height: 105vh;
+  }
+  section .content .chat-wrapper {
+    height: 105vh;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    height: 100vh;
+  }
+  section .content .menu-chat {
+    display: none;
+  }
+  section .content .chat-wrapper {
+    height: 100vh;
+    width: 100%;
+  }
+  section .content .chat-wrapper .chat #moo {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  section .content .chat-wrapper .btn button {
+    top: 2px;
+    right: 10px;
+  }
+}
+@media (max-width: 400px) {
+  section {
+    height: 110vh;
+  }
+  section .content .chat-wrapper {
+    height: 110vh;
+    overflow: hidden;
+  }
+}

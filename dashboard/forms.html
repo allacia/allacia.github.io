@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+  <link rel="stylesheet" href="css/preloader.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="font/themify-icons.css" rel="stylesheet">
+  <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_forms.css">
+</head>
+
+<body>
+  <div class="loaderArea">
+   <div class="loader"></div>
+  </div>
+
+  <nav>
+    <div class="left-nav">
+      <div class="logo">
+        <a href="index.html"><span class="ti-star blue"></span></a>
+        <a href="index.html"><p>Logotype</p></a>
+      </div>
+      <div class="menu-list">
+        <div class="list">
+          <a href="index.html" title="Dashboard"><span class="ti-home blue"></span></a>
+          <a class="hidden" href="index.html">Dashboard</a>
+        </div>
+        <div class="list">
+          <a href="email.html" title="Email"><span class="ti-email gray"></span></a>
+          <a class="hidden" href="email.html">Email</a>
+        </div>
+        <div class="list">
+          <a href="compose.html" title="Compose"><span class="ti-share blue"></span></a>
+          <a class="hidden" href="compose.html">Compose</a>
+        </div>
+        <div class="list">
+          <a href="calendar.html" title="Calendar"><span class="ti-calendar orange"></span></a>
+          <a class="hidden" href="calendar.html">Calendar</a>
+        </div>
+        <div class="list">
+          <a href="chat.html" title="Chat"><span class="ti-comment-alt violet"></span></a>
+          <a class="hidden" href="chat.html">Chat</a>
+        </div>
+        <div class="list">
+          <a href="charts.html" title="Charts"><span class="ti-bar-chart violet"></span></a>
+          <a class="hidden" href="charts.html">Charts</a>
+        </div>
+        <div class="list">
+          <a href="forms.html" title="Forms"><span class="ti-pencil blue"></span></a>
+          <a class="hidden" href="forms.html">Forms</a>
+        </div>
+        <div class="list">
+          <a href="elements.html" title="UI Elements"><span class="ti-palette red"></span></a>
+          <a class="hidden" href="elements.html">UI Elements</a>
+        </div>
+      </div>
+    </div>
+    <div class="top-nav">
+      <div class="wrapper-menu">
+        <div class="menu">
+          <span class="ti-menu"></span>
+        </div>
+        <div class="search">
+          <span class="ti-search"></span>
+          <input type="text" placeholder="Search..." name="search" value="">
+        </div>
+      </div>
+      <div class="notification">
+        <div class="bell">
+          <span class="ti-bell" data-modal="#m1"></span>
+        </div>
+        <div class="message">
+          <span class="ti-email" data-modal="#m2"></span>
+        </div>
+        <div class="profile" data-modal="#m3">
+          <div class="icon"></div>
+          <div class="name">
+            <p>John Doe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal-container">
+  	<div id="m1" class="modal">
+  		<div class="title">
+        <span class="ti-bell"></span>
+        <h3>Notification</h3>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>John Doe <span>liked your</span> post</h4>
+          <p>5 mins ago</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>Moo Doe <span>liked your</span> cover image</h4>
+          <p>7 mins ago</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <h4>Lee Doe <span>commented on your</span> video</h4>
+          <p>10 mins ago</p>
+        </div>
+      </div>
+      <div class="footer-notif">
+        <h3>View All Notification</h3>
+        <span class="ti-angle-right"></span>
+      </div>
+  	</div>
+  	<div id="m2" class="modal">
+      <div class="title">
+        <span class="ti-email"></span>
+        <h3>Emails</h3>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>John Doe</h4>
+            <span>5 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>Moo Doe</h4>
+            <span>15 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="photo"></div>
+        <div class="text-post">
+          <div class="title-text">
+            <h4>Lee Doe</h4>
+            <span>25 mins ago</span>
+          </div>
+          <p>Want to create your customized data generator for your app...</p>
+        </div>
+      </div>
+      <div class="footer-notif">
+        <h3>View All Email</h3>
+        <span class="ti-angle-right"></span>
+      </div>
+    </div>
+    <div id="m3" class="modal">
+      <div class="menu-container">
+        <div class="menu-list">
+          <span class="ti-settings"></span>
+          <p>Setting</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-user"></span>
+          <p>Profile</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-email"></span>
+          <p>Messges</p>
+        </div>
+        <div class="menu-list">
+          <span class="ti-power-off"></span>
+          <p>Logout</p>
+        </div>
+      </div>
+    </div>
+	</div>
+
+  <section>
+    <div class="content">
+      <div class="forms-container">
+        <div class="basic-forms">
+          <h3>Line Chart</h3>
+          <form>
+            <label for="email">Email address</label>
+            <input type="text" name="email" value="" placeholder="Email address">
+            <p>We'll never share your email with anyone else.</p>
+            <label for="password">Password</label>
+            <input type="password" name="pass" value="" placeholder="Password">
+            <div class="checkbox-container">
+              <input type="checkbox" class="checkbox" id="checkbox1" />
+              <label for="checkbox1">Call John for Dinner</label>
+            </div>
+          </form>
+          <button type="button" name="button">Submit</button>
+        </div>
+        <div class="complex-forms">
+          <h3>Complex Form Layout</h3>
+          <div class="email-pass">
+            <div class="email-container">
+              <label for="email">Email address</label>
+              <input type="text" name="email" value="" placeholder="Email address">
+            </div>
+            <div class="pass-container">
+              <label for="password">Password</label>
+              <input type="password" name="pass" value="" placeholder="Password">
+            </div>
+          </div>
+          <div class="address-container">
+            <label for="address">Address</label>
+            <input type="text" name="address" value="" placeholder="1234 Main St">
+            <label for="address2">Address 2</label>
+            <input type="text" name="address2" value="" placeholder="Apartment, studio or floor">
+          </div>
+          <div class="city">
+            <div class="city-container">
+              <label for="city">City</label>
+              <input type="text" name="city" value="">
+            </div>
+            <div class="state-container">
+            <div class="select-container">
+              <label>State</label>
+              <select class="" name="choose">
+                <option value="[object Object]" selected>Choose...</option>
+                <option value="[object Object]">...</option>
+              </select>
+              <div class="icon">
+                <span class="ti-angle-down"></span>
+              </div>
+            </div>
+            </div>
+            <div class="zip-container">
+              <label for="zip">Zip</label>
+              <input type="text" name="zip" value="">
+            </div>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" class="checkbox" id="checkbox2"/>
+            <label for="checkbox2">Call John for Dinner</label>
+          </div>
+          <button type="button" name="button">Submit</button>
+        </div>
+        <div class="horizontal-form">
+          <h3>Horizontal Form</h3>
+          <div class="email-container">
+            <label for="email">Email address</label>
+            <input type="text" name="email" value="" placeholder="Email address">
+          </div>
+          <div class="pass-container">
+            <label for="password">Password</label>
+            <input type="password" name="" value="" placeholder="Password">
+          </div>
+          <div class="radio-container">
+            <label>Radios</label>
+            <div class="radio-list">
+              <div class="input-group">
+                <input type="radio" name="radio-list" id="radio1">
+                <label for="radio1">Option one is this and that—be sure to include
+                  why it's great</label>
+              </div>
+              <div class="input-group">
+                <input type="radio" name="radio-list" id="radio2">
+                <label for="radio2">Option two can be something else and
+                  selecting it will deselect option one</label>
+              </div>
+              <div class="input-group">
+                <input type="radio" name="radio-list" id="radio3" disabled>
+                <label for="radio3">Option three is disabled</label>
+              </div>
+            </div>
+          </div>
+          <div class="check-container">
+            <label>Checkbox</label>
+            <div class="input-group">
+              <input type="checkbox" name="check" id="check4" value="">
+              <label for="check4">Check me out</label>
+            </div>
+          </div>
+          <button type="button" name="button">Submit</button>
+        </div>
+        <div class="disabled-forms">
+          <h3>Disabled Forms</h3>
+          <form>
+            <label for="email">Disabled input</label>
+            <input type="text" name="email" value="" placeholder="Disabled input" disabled>
+            <div class="select-container">
+              <label>Disabled select menu</label>
+              <select class="" name="dis" disabled>
+                <option value="[object Object]" selected>Disabled select</option>
+              </select>
+            </div>
+            <div class="check-container">
+              <div class="input-group">
+                <input type="checkbox" name="checknot" id="check5" value="" disabled>
+                <label for="check5">Can't check this</label>
+              </div>
+            </div>
+          </form>
+          <button type="button" name="button">Submit</button>
+        </div>
+        <div class="validation-forms">
+          <h3>Validation</h3>
+          <div class="name-container">
+            <div class="first-name">
+              <label for="first">First name</label>
+              <input type="text" name="first" value="Mark">
+            </div>
+            <div class="last-name">
+              <label for="last">Last name</label>
+              <input type="text" name="last" value="Otto">
+            </div>
+          </div>
+          <div class="city">
+            <div class="city-container">
+              <label for="city">City</label>
+              <input type="text" name="city" value="" placeholder="City">
+            </div>
+            <div class="state-container">
+              <label for="state">State</label>
+              <input type="text" name="state" value="" placeholder="State">
+            </div>
+            <div class="zip-container">
+              <label for="zip">Zip</label>
+              <input type="text" name="zip" value="" placeholder="Zip">
+            </div>
+          </div>
+          <button type="button" name="button">Submit</button>
+        </div>
+      </div>
+      <div class="footer-section">
+        <span>Copyright © 2017 Designed by <a href="https://colorlib.com/polygon/adminator/index.html">Colorlib</a>. All rights reserved.</span>
+        <p>Created by Daria Zolotarova</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script>
+    $(window).on('load', function () {
+      $preloader = $('.loaderArea'),
+        $loader = $preloader.find('.loader');
+      $loader.fadeOut();
+      $preloader.delay(350).fadeOut('slow');
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

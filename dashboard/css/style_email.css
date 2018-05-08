@@ -1,0 +1,218 @@
+section {
+  height: 100vh;
+  padding-left: 0;
+  padding-right: 0;
+}
+section .content {
+  display: flex;
+  margin-top: -20px;
+}
+section .content .email-menu {
+  height: 100vh;
+  width: 20%;
+  background-color: #fff;
+  border-right: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .email-menu .new-message {
+  height: 10%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0625);
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .content .email-menu .new-message button {
+  border: none;
+  background-color: #f44336;
+  color: #fff;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 1vh 2vw;
+  border-radius: .3em;
+  cursor: pointer;
+  transition: 1s;
+}
+section .content .email-menu .new-message button:hover {
+  background-color: #d13327;
+}
+section .content .email-menu .links-email {
+  padding: 3vh 2vw;
+}
+section .content .email-menu .links-email .link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2vh;
+  cursor: pointer;
+}
+section .content .email-menu .links-email .link span {
+  margin-right: 1vw;
+}
+section .content .email-menu .links-email .link h3 {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+section .content .email-menu .links-email .link h3:hover {
+  color: #45aaf2;
+}
+section .content .email-menu .links-email .link p {
+  position: absolute;
+  right: 0;
+  font-weight: 500;
+  font-size: .7em;
+}
+section .content .message-container {
+  width: 32%;
+  background-color: #fff;
+  height: 100vh;
+  border-right: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .message-container .btn {
+  height: 10%;
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .message-container .btn .btn-left,
+section .content .message-container .btn .btn-right {
+  margin: 1vw;
+}
+section .content .message-container .btn .btn-left a,
+section .content .message-container .btn .btn-right a {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+section .content .message-container .btn .btn-right {
+  position: absolute;
+  right: 0;
+}
+section .content .message-container .search {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .message-container .search input[type="text"] {
+  width: 80%;
+  border: none;
+  padding: 15px;
+  outline: none;
+  font-weight: 100;
+}
+section .content .message-container .messages {
+  height: 79vh;
+  overflow-y: scroll;
+}
+section .content .message-container .messages .message {
+  padding: 1vh 1vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0625);
+  background-color: #fff;
+  cursor: pointer;
+}
+section .content .message-container .messages .message .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vh;
+  position: relative;
+}
+section .content .message-container .messages .message .title h4 {
+  font-weight: 300;
+}
+section .content .message-container .messages .message .title p {
+  position: absolute;
+  right: 0;
+}
+section .content .message-container .messages .message h3 {
+  margin-bottom: 1vh;
+  font-weight: 400;
+}
+section .content .message-container .messages .message p {
+  font-weight: 100;
+}
+section .content .message-container .messages .message:hover {
+  background-color: #f9f9f9;
+}
+section .content .big-message {
+  width: 52%;
+  background-color: #fff;
+}
+section .content .big-message .title-name {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0625);
+  padding: 2vh 2vw;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+section .content .big-message .title-name .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #ccc;
+}
+section .content .big-message .title-name .title {
+  margin-left: 2vw;
+}
+section .content .big-message .title-name .title .date {
+  font-size: 0.8em;
+  font-weight: 100;
+  margin-bottom: 1vh;
+}
+section .content .big-message .title-name .title .name {
+  font-weight: 400;
+  margin-bottom: 1vh;
+}
+section .content .big-message .title-name .title .email {
+  font-weight: 200;
+}
+section .content .big-message .title-name .red-btn {
+  padding: 10px;
+  border-radius: 100%;
+  background-color: #fc5c65;
+  text-align: center;
+  margin-right: 1vw;
+  position: absolute;
+  right: 0;
+  transition: 1s;
+}
+section .content .big-message .title-name .red-btn a span {
+  color: #fff;
+}
+section .content .big-message .title-name .red-btn:hover {
+  background-color: #d13327;
+}
+section .content .big-message .text-message {
+  padding: 2vh 2vw;
+}
+section .content .big-message .text-message h3 {
+  font-weight: 400;
+}
+section .content .big-message .text-message p {
+  font-weight: 200;
+  margin-top: 2vh;
+}
+@media (max-width: 960px) {
+  section .content .message-container .messages {
+    height: 70vh;
+  }
+}
+@media (max-width: 768px) {
+  section .content .email-menu {
+    display: none;
+  }
+  section .content .big-message {
+    display: none;
+  }
+  section .content .message-container {
+    border: none;
+    left: 0;
+    width: 100%;
+  }
+  section .content .message-container .messages {
+    height: 62vh;
+  }
+  section .content .message-container .messages .message {
+    margin: 0;
+  }
+}

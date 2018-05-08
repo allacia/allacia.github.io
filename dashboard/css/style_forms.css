@@ -1,0 +1,477 @@
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input {
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+}
+input:focus {
+  border-color: #45aaf2;
+  outline: none;
+}
+button {
+  padding: 10px;
+  margin: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: #45aaf2;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #2281c6;
+}
+section {
+  height: 170vh;
+}
+section .content .forms-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+section .content .forms-container .basic-forms {
+  width: 48%;
+  margin-right: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .forms-container .basic-forms h3 {
+  margin: 20px;
+  font-size: 1em;
+  font-weight: 300;
+}
+section .content .forms-container .basic-forms form {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+section .content .forms-container .basic-forms form input,
+section .content .forms-container .basic-forms form label,
+section .content .forms-container .basic-forms form p {
+  margin-bottom: 10px;
+}
+section .content .forms-container .basic-forms form p {
+  font-weight: 300;
+  font-size: .8em;
+}
+section .content .forms-container .basic-forms form .checkbox-container .checkbox {
+  position: absolute;
+  margin: 10px 0 0 7px;
+  opacity: 0;
+  z-index: -1;
+}
+section .content .forms-container .basic-forms form .checkbox-container .checkbox + label {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+}
+section .content .forms-container .basic-forms form .checkbox-container .checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+  border-radius: 100%;
+  background: #FFF;
+}
+section .content .forms-container .basic-forms form .checkbox-container .checkbox + label:after {
+  content: '';
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/bg_check.png);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+section .content .forms-container .basic-forms form .checkbox-container .checkbox:checked + label:after {
+  opacity: 1;
+}
+section .content .forms-container .complex-forms {
+  width: 48%;
+  margin-right: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .forms-container .complex-forms h3 {
+  margin: 20px;
+  font-size: 1em;
+  font-weight: 300;
+}
+section .content .forms-container .complex-forms .email-pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+section .content .forms-container .complex-forms .email-pass .email-container,
+section .content .forms-container .complex-forms .email-pass .pass-container {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+section .content .forms-container .complex-forms .email-pass .email-container input,
+section .content .forms-container .complex-forms .email-pass .pass-container input {
+  width: 90%;
+}
+section .content .forms-container .complex-forms .email-pass .email-container input,
+section .content .forms-container .complex-forms .email-pass .pass-container input,
+section .content .forms-container .complex-forms .email-pass .email-container label,
+section .content .forms-container .complex-forms .email-pass .pass-container label {
+  margin-bottom: 10px;
+}
+section .content .forms-container .complex-forms .address-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 20px;
+}
+section .content .forms-container .complex-forms .address-container input,
+section .content .forms-container .complex-forms .address-container label {
+  margin-bottom: 10px;
+}
+section .content .forms-container .complex-forms .city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+section .content .forms-container .complex-forms .city .city-container,
+section .content .forms-container .complex-forms .city .select-container,
+section .content .forms-container .complex-forms .city .zip-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+section .content .forms-container .complex-forms .city .city-container label,
+section .content .forms-container .complex-forms .city .select-container label,
+section .content .forms-container .complex-forms .city .zip-container label {
+  margin-bottom: 10px;
+}
+section .content .forms-container .complex-forms .city .select-container {
+  position: relative;
+}
+section .content .forms-container .complex-forms .city .select-container select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+  border-radius: 3px;
+}
+section .content .forms-container .complex-forms .city .select-container .icon {
+  position: absolute;
+  top: 45px;
+  right: 5px;
+  font-size: .8em;
+  cursor: pointer;
+}
+section .content .forms-container .complex-forms .checkbox-container {
+  margin: 0 20px;
+}
+section .content .forms-container .complex-forms .checkbox-container .checkbox {
+  position: absolute;
+  margin: 10px 0 0 7px;
+  opacity: 0;
+  z-index: -1;
+}
+section .content .forms-container .complex-forms .checkbox-container .checkbox + label {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+}
+section .content .forms-container .complex-forms .checkbox-container .checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+  border-radius: 100%;
+  background: #FFF;
+}
+section .content .forms-container .complex-forms .checkbox-container .checkbox + label:after {
+  content: '';
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/bg_check.png);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+section .content .forms-container .complex-forms .checkbox-container .checkbox:checked + label:after {
+  opacity: 1;
+}
+section .content .forms-container .horizontal-form {
+  width: 48%;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .forms-container .horizontal-form h3 {
+  margin: 20px;
+  font-size: 1em;
+  font-weight: 300;
+}
+section .content .forms-container .horizontal-form .email-container,
+section .content .forms-container .horizontal-form .pass-container {
+  margin: 0 20px;
+}
+section .content .forms-container .horizontal-form .email-container input,
+section .content .forms-container .horizontal-form .pass-container input {
+  width: 70%;
+}
+section .content .forms-container .horizontal-form .email-container,
+section .content .forms-container .horizontal-form .pass-container,
+section .content .forms-container .horizontal-form .radio-container,
+section .content .forms-container .horizontal-form .check-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 20px 20px;
+}
+section .content .forms-container .horizontal-form .radio-container .radio-list {
+  width: 75%;
+}
+section .content .forms-container .horizontal-form .radio-container .radio-list .input-group label {
+  font-size: .8em;
+}
+section .content .forms-container .horizontal-form .radio-container .radio-list .input-group:last-child {
+  color: #ccc;
+}
+section .content .forms-container .horizontal-form .check-container .input-group {
+  width: 75%;
+}
+section .content .forms-container .disabled-forms {
+  width: 48%;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .forms-container .disabled-forms h3 {
+  margin: 20px;
+  font-size: 1em;
+  font-weight: 300;
+}
+section .content .forms-container .disabled-forms form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 20px;
+}
+section .content .forms-container .disabled-forms form input {
+  margin-bottom: 10px;
+}
+section .content .forms-container .disabled-forms form .select-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+section .content .forms-container .disabled-forms form .select-container select {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #e9ecef;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+  border-radius: 3px;
+}
+section .content .forms-container .validation-forms {
+  width: 48%;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+}
+section .content .forms-container .validation-forms h3 {
+  margin: 20px;
+  font-size: 1em;
+  font-weight: 300;
+}
+section .content .forms-container .validation-forms .name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+section .content .forms-container .validation-forms .name-container .first-name,
+section .content .forms-container .validation-forms .name-container .last-name {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+section .content .forms-container .validation-forms .name-container .first-name input,
+section .content .forms-container .validation-forms .name-container .last-name input {
+  width: 90%;
+}
+section .content .forms-container .validation-forms .name-container .first-name input,
+section .content .forms-container .validation-forms .name-container .last-name input,
+section .content .forms-container .validation-forms .name-container .first-name label,
+section .content .forms-container .validation-forms .name-container .last-name label {
+  margin-bottom: 10px;
+}
+section .content .forms-container .validation-forms .city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 20px;
+}
+section .content .forms-container .validation-forms .city label {
+  margin-bottom: 10px;
+}
+section .content .forms-container .validation-forms .city .city-container,
+section .content .forms-container .validation-forms .city .state-container,
+section .content .forms-container .validation-forms .city .zip-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+section .content .forms-container .validation-forms .city .city-container input,
+section .content .forms-container .validation-forms .city .state-container input,
+section .content .forms-container .validation-forms .city .zip-container input {
+  width: 85%;
+}
+@media (max-width: 1280px) {
+  section {
+    height: 180vh;
+  }
+}
+@media (max-width: 1024px) {
+  section {
+    height: 330vh;
+  }
+  section .content .forms-container {
+    display: block;
+  }
+  section .content .forms-container .basic-forms,
+  section .content .forms-container .complex-forms,
+  section .content .forms-container .horizontal-form,
+  section .content .forms-container .disabled-forms,
+  section .content .forms-container .validation-forms {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section .content .forms-container .complex-forms .city {
+    display: block;
+    margin-bottom: 20px;
+  }
+  section .content .forms-container .horizontal-form .email-container,
+  section .content .forms-container .horizontal-form .pass-container,
+  section .content .forms-container .horizontal-form .radio-container,
+  section .content .forms-container .horizontal-form .check-container {
+    display: block;
+  }
+  section .content .forms-container .horizontal-form .email-container input,
+  section .content .forms-container .horizontal-form .pass-container input,
+  section .content .forms-container .horizontal-form .radio-container input,
+  section .content .forms-container .horizontal-form .check-container input {
+    margin-top: 20px;
+  }
+  section .content .forms-container .horizontal-form .email-container input,
+  section .content .forms-container .horizontal-form .pass-container input {
+    width: 95%;
+  }
+  section .content .forms-container .horizontal-form .radio-container .radio-list {
+    width: 100%;
+  }
+  section .content .forms-container .validation-forms .city {
+    display: block;
+  }
+  section .content .forms-container .validation-forms .city .city-container input,
+  section .content .forms-container .validation-forms .city .state-container input,
+  section .content .forms-container .validation-forms .city .zip-container input {
+    width: 95%;
+  }
+}
+@media (max-width: 960px) {
+  section {
+    height: 420vh;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    height: 350vh;
+  }
+}
+@media (max-width: 450px) {
+  section {
+    height: 400vh;
+  }
+}
+@media (max-width: 350px) {
+  section {
+    height: 500vh;
+  }
+}
