@@ -1,39 +1,41 @@
 $(document).ready(function() {
-  var action = false;
+  var actionHoco = false;
+  var actionUbic = false;
+  var actionDot = false;
   var actionMobile = false;
   var actionFilter = false;
   var actionHiddenClass = true;
   $('input:checkbox').removeAttr('checked');
 
-  $('.content-container .left-nav .hoco a').click(function() {
-    if(action == false) {
+  $('.content-container .left-nav .hoco .menu').click(function() {
+    if(actionHoco == false) {
       $('.content-container .left-nav .hoco .input-group').css('display', 'block');
-      action = true;
+      actionHoco = true;
     } else {
       $('.content-container .left-nav .hoco .input-group').css('display', 'none');
-      action = false;
+      actionHoco = false;
     }
-  	});
+  });
 
-    $('.content-container .left-nav .ubic a').click(function() {
-      if(action == false) {
-        $('.content-container .left-nav .ubic .input-group').css('display', 'block');
-        action = true;
-      } else {
-        $('.content-container .left-nav .ubic .input-group').css('display', 'none');
-        action = false;
-      }
-    	});
+  $('.content-container .left-nav .ubic .menu').click(function() {
+    if(actionUbic == false) {
+      $('.content-container .left-nav .ubic .input-group').css('display', 'block');
+      actionUbic = true;
+    } else {
+      $('.content-container .left-nav .ubic .input-group').css('display', 'none');
+      actionUbic = false;
+    }
+  });
 
-      $('.content-container .left-nav .dotfes a').click(function() {
-        if(action == false) {
-          $('.content-container .left-nav .dotfes  .input-group').css('display', 'block');
-          action = true;
-        } else {
-          $('.content-container .left-nav .dotfes  .input-group').css('display', 'none');
-          action = false;
-        }
-      	});
+  $('.content-container .left-nav .dotfes .menu').click(function() {
+    if(actionDot == false) {
+      $('.content-container .left-nav .dotfes  .input-group').css('display', 'block');
+      actionDot = true;
+    } else {
+      $('.content-container .left-nav .dotfes  .input-group').css('display', 'none');
+      actionDot = false;
+    }
+  });
 
   $('input[class]').click(function() {
     var target = $(this).attr('class');

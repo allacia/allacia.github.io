@@ -138,9 +138,16 @@ section .content-container .left-nav .dotfes {
   border-bottom: 1px solid #dee0e3;
   cursor: pointer;
 }
-section .content-container .left-nav .hoco a,
-section .content-container .left-nav .ubic a,
-section .content-container .left-nav .dotfes a {
+section .content-container .left-nav .hoco .menu,
+section .content-container .left-nav .ubic .menu,
+section .content-container .left-nav .dotfes .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .content-container .left-nav .hoco .menu a,
+section .content-container .left-nav .ubic .menu a,
+section .content-container .left-nav .dotfes .menu a {
   font-weight: bold;
 }
 section .content-container .left-nav .hoco .input-group,
@@ -192,7 +199,6 @@ section .content-container .content .wrapper-cart {
   flex-wrap: wrap;
   width: 100%;
   margin-right: -15px;
-  justify-content: center;
 }
 section .content-container .content .wrapper-cart .cart {
   background-color: white;

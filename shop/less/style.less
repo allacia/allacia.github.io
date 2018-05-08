@@ -133,8 +133,13 @@ section {
         padding: 20px;
         border-bottom: 1px solid #dee0e3;
         cursor: pointer;
-        a {
+        .menu {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a {
           font-weight: bold;
+          }
         }
         .input-group {
           display: none;
@@ -178,7 +183,6 @@ section {
         flex-wrap: wrap;
         width: 100%;
         margin-right: -15px;
-        justify-content: center;
         .cart {
           background-color: white;
           width: 19%;
