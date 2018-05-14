@@ -127,7 +127,7 @@ section {
     display: flex;
     width: 100%;
     .left-nav {
-      width: 15%;
+      width: 20%;
       border-right: 1px solid #dee0e3;
       .hoco, .ubic, .dotfes {
         padding: 20px;
@@ -138,7 +138,10 @@ section {
           justify-content: space-between;
           align-items: center;
           a {
-          font-weight: bold;
+            font-weight: bold;
+          }
+          i {
+            transition: .3s;
           }
         }
         .input-group {
@@ -181,26 +184,27 @@ section {
       .wrapper-cart {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        margin-left: -15px;
         margin-right: -15px;
         .cart {
           background-color: white;
-          width: 19%;
-          margin-right: 15px;
-          margin-left: 15px;
-          margin-bottom: 30px;
-          padding: 20px;
+          width: 22.5%;
+          margin: 0 15px 30px;
+          &:last-child {
+            margin-right: 0;
+          }
           &.hidden {
             display: none;
           }
           p {
+            margin: 20px;
             color: #ccc;
             font-size: 12px;
           }
           h3 {
+            margin: 0 20px 10px;
             font-size: 14px;
             font-weight: bold;
-            margin-bottom: 10px;
           }
           img {
             width: 100%;
@@ -208,6 +212,7 @@ section {
           .price-container {
             display: flex;
             position: relative;
+            margin: 0 20px;
             .price {
               p {
                 font-size: 24px;
@@ -217,13 +222,14 @@ section {
               .opt {
                 color: #ccc;
                 font-size: 12px;
+                margin-bottom: 20px;
               }
             }
             .btn {
               padding-left: 50px;
               padding-top: 10px;
               position: absolute;
-              margin-top: 40px;
+              margin-top: 20px;
               right: 0;
               a {
                 padding: 12px 25px;
@@ -367,6 +373,164 @@ footer {
   }
 }
 
+
+
+@media (max-width: 1500px) {
+  header {
+    .navbar-mobile {
+      display: block;
+      cursor: pointer;
+      position: fixed;
+      top: 0;
+      background-color: #fff;
+      height: 7%;
+      left: 0;
+      right: 0;
+      margin: 0;
+      z-index: 100;
+      .btn {
+        padding: 10px;
+      }
+    }
+    .wrapper-nav {
+      display: none;
+      &.mobile {
+        display: block;
+        width: 30%;
+        position: fixed;
+        background-color: #fff;
+        left: 0;
+        z-index: 100;
+        border-right: 1px solid #dee0e3;
+        overflow-y: scroll;
+        height: 97vh;
+        animation: .3s move linear;
+        .logo {
+          width: 100%;
+          a {
+            display: block;
+            margin: 0 auto;
+          }
+        }
+        .nav {
+          display: block;
+          width: 100%;
+          .top-nav {
+            display: block;
+            width: 100%;
+            .menu {
+              display: block;
+              border: none;
+              padding-left: 20px;
+              width: 100%;
+              ul {
+                width: 100%;
+                li {
+                  width: 100%;
+                }
+              }
+            }
+            .search {
+              display: block;
+              border: 1px solid #dee0e3;
+              width: 70%;
+              margin: 15px auto;
+            }
+            .addition {
+              display: block;
+              width: 100%;
+              justify-content: center;
+              .auth {
+                border: none;
+                text-align: center;
+                a {
+                  padding: 12px 25px;
+                  background-color: #2a8faf;
+                  color: #fff;
+                  &.enter {
+                    color: #fff;
+                    padding: 12px 25px;
+                  }
+                }
+              }
+              .backet {
+                text-align: center;
+              }
+            }
+          }
+          .bottom-nav {
+            .wrapper-categories {
+              ul {
+                li {
+                  display: block;
+                  border: none;
+                  text-align: center;
+                  width: 90%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  section {
+    .content-container {
+      margin-top: 35px;
+      .content {
+        .wrapper-cart {
+          .cart {
+            width: 30.5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  section {
+    .content-container {
+      margin-top: 35px;
+      .content {
+        .wrapper-cart {
+          .cart {
+            width: 46.5%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  section {
+    .content-container {
+      margin-top: 35px;
+      .content {
+        .wrapper-cart {
+          .cart {
+            width: 45.5%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  section {
+    .content-container {
+      margin-top: 35px;
+      .content {
+        .wrapper-cart {
+          .cart {
+            width: 44.5%;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 760px) {
   header {
     .navbar-mobile {
@@ -460,10 +624,11 @@ footer {
         }
         .wrapper-cart {
           display: block;
+          margin: 0;
           .cart {
-            width: 85%;
+            width: 100%;
             margin-left: 0;
-            margin-rigth: 0;
+            margin-right: 0;
           }
         }
       }
@@ -504,106 +669,11 @@ footer {
     }
   }
 }
-
-@media (max-width: 1500px) and (min-width: 768px) {
-  header {
-    .navbar-mobile {
-      display: block;
-      cursor: pointer;
-      position: fixed;
-      top: 0;
-      background-color: #fff;
-      height: 7%;
-      left: 0;
-      right: 0;
-      margin: 0;
-      z-index: 100;
-      .btn {
-        padding: 10px;
-      }
-    }
-    .wrapper-nav {
-      display: none;
-      &.mobile {
-        display: block;
-        width: 30%;
-        position: fixed;
-        background-color: #fff;
-        left: 0;
-        z-index: 100;
-        border-right: 1px solid #dee0e3;
-        .logo {
-          width: 100%;
-          a {
-            display: block;
-            margin: 0 auto;
-          }
-        }
-        .nav {
-          display: block;
-          width: 100%;
-          .top-nav {
-            display: block;
-            width: 100%;
-            .menu {
-              display: block;
-              border: none;
-              padding-left: 20px;
-              width: 100%;
-              ul {
-                width: 100%;
-                li {
-                  width: 100%;
-                }
-              }
-            }
-            .search {
-              display: block;
-              border: 1px solid #dee0e3;
-              width: 70%;
-              margin: 15px auto;
-            }
-            .addition {
-              display: block;
-              width: 100%;
-              justify-content: center;
-              .auth {
-                border: none;
-                text-align: center;
-                a {
-                  padding: 12px 25px;
-                  background-color: #2a8faf;
-                  color: #fff;
-                  &.enter {
-                    color: #fff;
-                    padding: 12px 25px;
-                  }
-                }
-              }
-              .backet {
-                text-align: center;
-              }
-            }
-          }
-          .bottom-nav {
-            .wrapper-categories {
-              ul {
-                li {
-                  display: block;
-                  border: none;
-                  text-align: center;
-                  width: 90%;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  section {
-    .content-container {
-      margin-top: 5%;
-    }
+@keyframes move {
+ 0% {
+   opacity: 0;
+ }
+  100% {
+    opacity: 1;
   }
 }

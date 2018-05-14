@@ -128,7 +128,7 @@ section .content-container {
   width: 100%;
 }
 section .content-container .left-nav {
-  width: 15%;
+  width: 20%;
   border-right: 1px solid #dee0e3;
 }
 section .content-container .left-nav .hoco,
@@ -149,6 +149,11 @@ section .content-container .left-nav .hoco .menu a,
 section .content-container .left-nav .ubic .menu a,
 section .content-container .left-nav .dotfes .menu a {
   font-weight: bold;
+}
+section .content-container .left-nav .hoco .menu i,
+section .content-container .left-nav .ubic .menu i,
+section .content-container .left-nav .dotfes .menu i {
+  transition: .3s;
 }
 section .content-container .left-nav .hoco .input-group,
 section .content-container .left-nav .ubic .input-group,
@@ -197,28 +202,29 @@ section .content-container .content .categories-mobile {
 section .content-container .content .wrapper-cart {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  margin-left: -15px;
   margin-right: -15px;
 }
 section .content-container .content .wrapper-cart .cart {
   background-color: white;
-  width: 19%;
-  margin-right: 15px;
-  margin-left: 15px;
-  margin-bottom: 30px;
-  padding: 20px;
+  width: 22.5%;
+  margin: 0 15px 30px;
+}
+section .content-container .content .wrapper-cart .cart:last-child {
+  margin-right: 0;
 }
 section .content-container .content .wrapper-cart .cart.hidden {
   display: none;
 }
 section .content-container .content .wrapper-cart .cart p {
+  margin: 20px;
   color: #ccc;
   font-size: 12px;
 }
 section .content-container .content .wrapper-cart .cart h3 {
+  margin: 0 20px 10px;
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 section .content-container .content .wrapper-cart .cart img {
   width: 100%;
@@ -226,6 +232,7 @@ section .content-container .content .wrapper-cart .cart img {
 section .content-container .content .wrapper-cart .cart .price-container {
   display: flex;
   position: relative;
+  margin: 0 20px;
 }
 section .content-container .content .wrapper-cart .cart .price-container .price p {
   font-size: 24px;
@@ -235,12 +242,13 @@ section .content-container .content .wrapper-cart .cart .price-container .price 
 section .content-container .content .wrapper-cart .cart .price-container .price .opt {
   color: #ccc;
   font-size: 12px;
+  margin-bottom: 20px;
 }
 section .content-container .content .wrapper-cart .cart .price-container .btn {
   padding-left: 50px;
   padding-top: 10px;
   position: absolute;
-  margin-top: 40px;
+  margin-top: 20px;
   right: 0;
 }
 section .content-container .content .wrapper-cart .cart .price-container .btn a {
@@ -371,6 +379,128 @@ footer span {
   padding: 15px;
   color: #fff;
 }
+@media (max-width: 1500px) {
+  header .navbar-mobile {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    height: 7%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 100;
+  }
+  header .navbar-mobile .btn {
+    padding: 10px;
+  }
+  header .wrapper-nav {
+    display: none;
+  }
+  header .wrapper-nav.mobile {
+    display: block;
+    width: 30%;
+    position: fixed;
+    background-color: #fff;
+    left: 0;
+    z-index: 100;
+    border-right: 1px solid #dee0e3;
+    overflow-y: scroll;
+    height: 97vh;
+    animation: .3s move linear;
+  }
+  header .wrapper-nav.mobile .logo {
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .logo a {
+    display: block;
+    margin: 0 auto;
+  }
+  header .wrapper-nav.mobile .nav {
+    display: block;
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .nav .top-nav {
+    display: block;
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .menu {
+    display: block;
+    border: none;
+    padding-left: 20px;
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .menu ul {
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .menu ul li {
+    width: 100%;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .search {
+    display: block;
+    border: 1px solid #dee0e3;
+    width: 70%;
+    margin: 15px auto;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .addition {
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .addition .auth {
+    border: none;
+    text-align: center;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .addition .auth a {
+    padding: 12px 25px;
+    background-color: #2a8faf;
+    color: #fff;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .addition .auth a.enter {
+    color: #fff;
+    padding: 12px 25px;
+  }
+  header .wrapper-nav.mobile .nav .top-nav .addition .backet {
+    text-align: center;
+  }
+  header .wrapper-nav.mobile .nav .bottom-nav .wrapper-categories ul li {
+    display: block;
+    border: none;
+    text-align: center;
+    width: 90%;
+  }
+  section .content-container {
+    margin-top: 35px;
+  }
+  section .content-container .content .wrapper-cart .cart {
+    width: 30.5%;
+  }
+}
+@media (max-width: 1300px) {
+  section .content-container {
+    margin-top: 35px;
+  }
+  section .content-container .content .wrapper-cart .cart {
+    width: 46.5%;
+  }
+}
+@media (max-width: 1100px) {
+  section .content-container {
+    margin-top: 35px;
+  }
+  section .content-container .content .wrapper-cart .cart {
+    width: 45.5%;
+  }
+}
+@media (max-width: 1100px) {
+  section .content-container {
+    margin-top: 35px;
+  }
+  section .content-container .content .wrapper-cart .cart {
+    width: 44.5%;
+  }
+}
 @media (max-width: 760px) {
   header .navbar-mobile {
     display: block;
@@ -455,11 +585,12 @@ footer span {
   }
   section .content-container .content .wrapper-cart {
     display: block;
+    margin: 0;
   }
   section .content-container .content .wrapper-cart .cart {
-    width: 85%;
+    width: 100%;
     margin-left: 0;
-    margin-rigth: 0;
+    margin-right: 0;
   }
   footer .wrapper-footer {
     display: block;
@@ -494,95 +625,11 @@ footer span {
     padding-bottom: 50px;
   }
 }
-@media (max-width: 1500px) and (min-width: 768px) {
-  header .navbar-mobile {
-    display: block;
-    cursor: pointer;
-    position: fixed;
-    top: 0;
-    background-color: #fff;
-    height: 7%;
-    left: 0;
-    right: 0;
-    margin: 0;
-    z-index: 100;
+@keyframes move {
+  0% {
+    opacity: 0;
   }
-  header .navbar-mobile .btn {
-    padding: 10px;
-  }
-  header .wrapper-nav {
-    display: none;
-  }
-  header .wrapper-nav.mobile {
-    display: block;
-    width: 30%;
-    position: fixed;
-    background-color: #fff;
-    left: 0;
-    z-index: 100;
-    border-right: 1px solid #dee0e3;
-  }
-  header .wrapper-nav.mobile .logo {
-    width: 100%;
-  }
-  header .wrapper-nav.mobile .logo a {
-    display: block;
-    margin: 0 auto;
-  }
-  header .wrapper-nav.mobile .nav {
-    display: block;
-    width: 100%;
-  }
-  header .wrapper-nav.mobile .nav .top-nav {
-    display: block;
-    width: 100%;
-  }
-  header .wrapper-nav.mobile .nav .top-nav .menu {
-    display: block;
-    border: none;
-    padding-left: 20px;
-    width: 100%;
-  }
-  header .wrapper-nav.mobile .nav .top-nav .menu ul {
-    width: 100%;
-  }
-  header .wrapper-nav.mobile .nav .top-nav .menu ul li {
-    width: 100%;
-  }
-  header .wrapper-nav.mobile .nav .top-nav .search {
-    display: block;
-    border: 1px solid #dee0e3;
-    width: 70%;
-    margin: 15px auto;
-  }
-  header .wrapper-nav.mobile .nav .top-nav .addition {
-    display: block;
-    width: 100%;
-    justify-content: center;
-  }
-  header .wrapper-nav.mobile .nav .top-nav .addition .auth {
-    border: none;
-    text-align: center;
-  }
-  header .wrapper-nav.mobile .nav .top-nav .addition .auth a {
-    padding: 12px 25px;
-    background-color: #2a8faf;
-    color: #fff;
-  }
-  header .wrapper-nav.mobile .nav .top-nav .addition .auth a.enter {
-    color: #fff;
-    padding: 12px 25px;
-  }
-  header .wrapper-nav.mobile .nav .top-nav .addition .backet {
-    text-align: center;
-  }
-  header .wrapper-nav.mobile .nav .bottom-nav .wrapper-categories ul li {
-    display: block;
-    border: none;
-    text-align: center;
-    width: 90%;
-  }
-  section .content-container {
-    margin-top: 5%;
+  100% {
+    opacity: 1;
   }
 }

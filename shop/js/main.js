@@ -10,9 +10,11 @@ $(document).ready(function() {
   $('.content-container .left-nav .hoco .menu').click(function() {
     if(actionHoco == false) {
       $('.content-container .left-nav .hoco .input-group').css('display', 'block');
+      $('.content-container .left-nav .hoco .menu i').css('transform', 'rotate(180deg)');
       actionHoco = true;
     } else {
       $('.content-container .left-nav .hoco .input-group').css('display', 'none');
+      $('.content-container .left-nav .hoco .menu i').css('transform', 'rotate(0deg)');
       actionHoco = false;
     }
   });
@@ -20,9 +22,11 @@ $(document).ready(function() {
   $('.content-container .left-nav .ubic .menu').click(function() {
     if(actionUbic == false) {
       $('.content-container .left-nav .ubic .input-group').css('display', 'block');
+      $('.content-container .left-nav .ubic .menu i').css('transform', 'rotate(180deg)');
       actionUbic = true;
     } else {
       $('.content-container .left-nav .ubic .input-group').css('display', 'none');
+      $('.content-container .left-nav .ubic .menu i').css('transform', 'rotate(0deg)');
       actionUbic = false;
     }
   });
@@ -30,9 +34,11 @@ $(document).ready(function() {
   $('.content-container .left-nav .dotfes .menu').click(function() {
     if(actionDot == false) {
       $('.content-container .left-nav .dotfes  .input-group').css('display', 'block');
+      $('.content-container .left-nav .dotfes .menu i').css('transform', 'rotate(180deg)');
       actionDot = true;
     } else {
       $('.content-container .left-nav .dotfes  .input-group').css('display', 'none');
+      $('.content-container .left-nav .dotfes .menu i').css('transform', 'rotate(0deg)');
       actionDot = false;
     }
   });
