@@ -149,7 +149,7 @@ section .content-container {
   width: 100%;
 }
 section .content-container .left-nav {
-  width: 20%;
+  width: 15%;
   border-right: 1px solid #dee0e3;
 }
 section .content-container .left-nav .hoco,
@@ -206,6 +206,7 @@ section .content-container .left-nav .dotfes .input-group h5 {
   display: inline;
 }
 section .content-container .content {
+  width: 85%;
   padding: 30px;
   background-color: #ecf0f1;
 }
@@ -623,6 +624,9 @@ footer span {
   }
   section .content-container .left-nav {
     display: none;
+  }
+  section .content-container .content {
+    width: auto;
   }
   section .content-container .content .categories-mobile {
     display: block;
