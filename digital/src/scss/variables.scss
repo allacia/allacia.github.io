@@ -1,0 +1,107 @@
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+
+$bg-color: #ffffff;
+$header-text-color: #ffffff;
+$button-text-color: #020202;
+$first-gradient: #de813c;
+$second-gradient: #3f519a;
+$shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+$text-color: #040404;
+$title-color: #333332;
+$bg-gray-light: #2a2736;
+$border-color: #6e92fd;
+$white: #ffffff;
+$bg-arrows: rgba(255, 255, 255, 0.05);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, center,
+dl, dt, dd, ol, ul, li, input, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Lato', sans-serif;
+  vertical-align: baseline;
+  font-weight: 400;
+  color: $text-color;
+  outline: none;
+  text-decoration: none;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+$small-screen: 320px;
+$small-screen-2: 480px;
+$medium-screen: 768px;
+$medium-screen-2: 800px;
+$big-screen: 980px;
+$big-screen-2: 1024px;
+$huge-screen: 1280px;
+$huge-screen-2: 1400px;
+$huge-screen-3: 1600px;
+$huge-screen-4: 1900px;
+$huge-screen-5: 2560px;
+$huge-screen-6: 3600px;
+$small-screen-max: $medium-screen - 1;
+$medium-screen-max: ($big-screen - 1);
+$medium-screen-2-max: ($big-screen-2 - 1);
+$big-screen-max: ($huge-screen - 1);
+
+@media (min-width: $small-screen) {
+  font-size: 6px;
+}
+
+@media (min-width: $medium-screen) {
+  font-size: 7px;
+}
+
+@media (min-width: $big-screen) {
+  font-size: 7px;
+}
+
+@media (min-width: $huge-screen) {
+  font-size: 7px;
+}
+
+@media (min-width: $huge-screen-2) {
+  font-size: 7px;
+}
+
+@media (min-width: $huge-screen-3) {
+  font-size: 9px;
+}
+
+@media (min-width: $huge-screen-4) {
+  font-size: 10px;
+}
+
+@media (min-width: $huge-screen-5) {
+  font-size: 10px;
+}
+
+@media (min-width: $huge-screen-6) {
+  font-size: 12px;
+}
