@@ -468,6 +468,10 @@ table {
 @media (min-width: 3600px) {
   font-size: 12px; }
 
+@font-face {
+  font-family: 'Bernadette';
+  src: url(src/fonts/bernadette.ttf); }
+
 body {
   background-color: #ffffff; }
 
@@ -512,7 +516,10 @@ nav {
     color: #ffffff;
     font-size: 1rem;
     font-weight: 700;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: color .5s; }
+    .menu-list__item a:hover {
+      color: #333332; }
 
 .greeting {
   position: absolute;
@@ -524,11 +531,12 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 15rem; }
+  margin-top: 17rem; }
   .greeting__title {
-    font-size: 10rem;
-    margin-bottom: 1rem;
-    color: #ffffff; }
+    font-size: 7rem;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+    font-family: 'Bernadette', sans-serif; }
   .greeting__subtitle {
     font-size: 3rem;
     margin-bottom: 4rem;
@@ -549,7 +557,12 @@ nav {
     outline: 0;
     border-radius: 15px;
     padding: .5rem 1rem;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: background-color, color, transform .5s; }
+    .greeting__btn:hover {
+      background: linear-gradient(to right, #de813c, #3f519a);
+      color: #ffffff;
+      transform: scale(1.5); }
 
 .article {
   display: flex;
@@ -582,6 +595,44 @@ nav {
       position: absolute;
       bottom: -17px; }
 
+.quote {
+  margin: calc(400px + 5rem) 350px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+  .quote-text {
+    width: 30%; }
+    .quote-text__text {
+      color: #040404;
+      font-size: 1.2rem;
+      line-height: 1.5; }
+      .quote-text__text:first-child {
+        font-weight: 700; }
+    .quote-text__quote {
+      color: #040404;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      font-style: italic;
+      font-weight: 700;
+      margin-top: 6rem; }
+    .quote-text__title {
+      font-family: 'Bernadette', sans-serif;
+      color: #333332;
+      font-size: 3rem;
+      margin-bottom: 2rem; }
+    .quote-text__name {
+      font-family: 'Bernadette', sans-serif;
+      color: #333332;
+      font-size: 3rem;
+      margin-top: 2rem;
+      text-align: center; }
+    .quote-text__btn {
+      margin-top: 2rem; }
+  .quote-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+
 .gradient-btn {
   text-transform: uppercase;
   background: linear-gradient(to right, #de813c, #3f519a);
@@ -592,4 +643,7 @@ nav {
   outline: 0;
   border-radius: 15px;
   padding: .5rem 1rem;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: transform .5s; }
+  .gradient-btn:hover {
+    transform: scale(1.2); }

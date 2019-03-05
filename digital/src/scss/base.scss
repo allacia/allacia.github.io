@@ -1,5 +1,10 @@
 @import "variables";
 
+@font-face {
+ font-family: 'Bernadette';
+ src: url("../fonts/bernadette.ttf");
+}
+
 body {
  background-color: $bg-color;
 }
@@ -53,6 +58,11 @@ nav {
    font-size: 1rem;
    font-weight: 700;
    text-transform: uppercase;
+   transition: color .5s;
+
+   &:hover {
+    color: $title-color;
+   }
   }
  }
 }
@@ -67,12 +77,13 @@ nav {
  justify-content: center;
  align-items: center;
  flex-direction: column;
- margin-top: 15rem;
+ margin-top: 17rem;
 
  &__title {
-  font-size: 10rem;
-  margin-bottom: 1rem;
+  font-size: 7rem;
+  margin-bottom: 2.5rem;
   color: $header-text-color;
+  font-family: 'Bernadette', sans-serif;
  }
 
  &__subtitle {
@@ -100,6 +111,13 @@ nav {
   border-radius: 15px;
   padding: .5rem 1rem;
   cursor: pointer;
+  transition: background-color, color, transform .5s;
+
+  &:hover {
+   background: linear-gradient(to right, $first-gradient, $second-gradient);
+   color: $header-text-color;
+   transform: scale(1.5);
+  }
  }
 }
 
@@ -145,6 +163,61 @@ nav {
  }
 }
 
+.quote {
+ margin: calc(400px + 5rem) 350px 0;
+ display: flex;
+ justify-content: space-between;
+ position: relative;
+
+  &-text {
+   width: 30%;
+
+    &__text {
+     color: $text-color;
+     font-size: 1.2rem;
+     line-height: 1.5;
+
+     &:first-child {
+      font-weight: 700;
+     }
+    }
+
+    &__quote {
+     color: $text-color;
+     font-size: 1.2rem;
+     line-height: 1.5;
+     font-style: italic;
+     font-weight: 700;
+     margin-top: 6rem;
+    }
+
+    &__title {
+     font-family: 'Bernadette', sans-serif;
+     color: $title-color;
+     font-size: 3rem;
+     margin-bottom: 2rem;
+    }
+
+    &__name {
+     font-family: 'Bernadette', sans-serif;
+     color: $title-color;
+     font-size: 3rem;
+     margin-top: 2rem;
+     text-align: center;
+    }
+
+    &__btn {
+     margin-top: 2rem;
+    }
+  }
+
+  &-img {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+  }
+}
+
 .gradient-btn {
  text-transform: uppercase;
  background: linear-gradient(to right, $first-gradient, $second-gradient);
@@ -156,4 +229,9 @@ nav {
  border-radius: 15px;
  padding: .5rem 1rem;
  cursor: pointer;
+ transition: transform .5s;
+
+ &:hover {
+  transform: scale(1.2);
+ }
 }
