@@ -733,6 +733,43 @@ nav {
           font-weight: 700;
           margin: .5rem 0 1rem; }
 
+.team {
+  margin: 4rem 350px;
+  position: relative; }
+  .team__title {
+    font-size: 2.5rem;
+    text-align: center; }
+  .team__subtitle {
+    text-align: center;
+    line-height: 1.5;
+    color: #313131;
+    margin: 2rem auto;
+    width: 85%;
+    display: block; }
+  .team-photo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    .team-photo-item__name {
+      text-align: center;
+      color: #333332;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-top: 1rem; }
+    .team-photo-item__position {
+      text-align: center;
+      color: #a3a3a3;
+      font-size: 1.2rem; }
+  .team::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -3rem;
+    left: -3rem;
+    bottom: -3rem;
+    background-color: #f4f4f4;
+    z-index: -1; }
+
 .gradient-btn {
   text-transform: uppercase;
   background: linear-gradient(to right, #de813c, #3f519a);

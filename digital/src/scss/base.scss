@@ -361,6 +361,62 @@ nav {
   }
 }
 
+.team {
+  margin: 4rem 350px;
+  position: relative;
+
+  &__title {
+	font-size: 2.5rem;
+	text-align: center;
+  }
+
+  &__subtitle {
+	text-align: center;
+	line-height: 1.5;
+	color: $light-text-color;
+	margin: 2rem auto;
+	width: 85%;
+	display: block;
+  }
+
+  &-photo {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+
+	&-item {
+	  &__img {
+
+	  }
+
+	  &__name {
+		text-align: center;
+		color: $title-color;
+		font-weight: 700;
+		font-size: 1.5rem;
+		margin-top: 1rem;
+	  }
+
+	  &__position {
+		text-align: center;
+		color: $lighter-text-color;
+		font-size: 1.2rem;
+	  }
+	}
+  }
+
+  &::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: -3rem;
+	left: -3rem;
+	bottom: -3rem;
+	background-color: $bg-gray;
+	z-index: -1;
+  }
+}
+
 .gradient-btn {
   text-transform: uppercase;
   background: linear-gradient(to right, $first-gradient, $second-gradient);
