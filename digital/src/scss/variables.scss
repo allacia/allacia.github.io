@@ -5,7 +5,7 @@ $header-text-color: #ffffff;
 $button-text-color: #020202;
 $first-gradient: #de813c;
 $second-gradient: #3f519a;
-$shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+$shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.5);
 $text-color: #040404;
 $title-color: #333332;
 $bg-gray-light: #2a2736;
@@ -30,24 +30,30 @@ time, mark, audio, video {
   outline: none;
   text-decoration: none;
 }
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;

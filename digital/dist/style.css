@@ -616,13 +616,9 @@ nav {
       font-weight: 700;
       margin-top: 6rem; }
     .quote-text__title {
-      font-family: 'Bernadette', sans-serif;
-      color: #333332;
       font-size: 3rem;
       margin-bottom: 2rem; }
     .quote-text__name {
-      font-family: 'Bernadette', sans-serif;
-      color: #333332;
       font-size: 3rem;
       margin-top: 2rem;
       text-align: center; }
@@ -632,6 +628,46 @@ nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%); }
+
+.features {
+  margin: 10rem 350px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative; }
+  .features-item {
+    margin-bottom: 3rem;
+    width: 47%; }
+    .features-item__img {
+      width: 100%; }
+    .features-item-text {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      right: 25%;
+      bottom: 25%;
+      background-color: #ffffff;
+      border-radius: 15px;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
+      .features-item-text__title {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 1rem 0; }
+      .features-item-text__text {
+        color: #040404;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5;
+        font-style: italic;
+        font-weight: 700;
+        width: 75%; }
+      .features-item-text__btn {
+        display: block;
+        margin: 2rem auto 0; }
 
 .gradient-btn {
   text-transform: uppercase;
@@ -647,3 +683,7 @@ nav {
   transition: transform .5s; }
   .gradient-btn:hover {
     transform: scale(1.2); }
+
+.title {
+  font-family: 'Bernadette', sans-serif;
+  color: #333332; }
