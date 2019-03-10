@@ -605,9 +605,12 @@ nav {
     .quote-text__text {
       color: #040404;
       font-size: 1.2rem;
+      line-height: 1.5;
+      font-weight: 700; }
+    .quote-text__subtext {
+      color: #040404;
+      font-size: 1.2rem;
       line-height: 1.5; }
-      .quote-text__text:first-child {
-        font-weight: 700; }
     .quote-text__quote {
       color: #040404;
       font-size: 1.2rem;
@@ -668,6 +671,67 @@ nav {
       .features-item-text__btn {
         display: block;
         margin: 2rem auto 0; }
+
+.services {
+  background-color: #f4f4f4;
+  margin: .5rem 150px;
+  display: flex;
+  align-items: center;
+  position: relative; }
+  .services-item {
+    padding: 5rem 200px; }
+    .services-item__title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem; }
+    .services-item__text {
+      width: 90%;
+      color: #040404;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      font-weight: 700; }
+    .services-item__subtext {
+      width: 90%;
+      color: #040404;
+      font-size: 1.1rem;
+      line-height: 1.5; }
+    .services-item__btn {
+      margin-top: 2.5rem; }
+    .services-item-icons {
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      right: 30%;
+      transform: translateY(-50%);
+      background: linear-gradient(to bottom right, #de813c, #3f519a);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 3rem;
+      border-radius: 15px; }
+      .services-item-icons-elem {
+        width: 50%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: 1px dashed rgba(255, 255, 255, 0.29);
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.29);
+        box-sizing: border-box; }
+        .services-item-icons-elem:nth-child(even) {
+          border-right: 0; }
+        .services-item-icons-elem:nth-child(5), .services-item-icons-elem:last-child {
+          border-bottom: 0; }
+        .services-item-icons-elem__img {
+          width: 40px;
+          height: 40px;
+          margin-top: 1rem; }
+        .services-item-icons-elem__text {
+          width: 60%;
+          text-align: center;
+          color: #ffffff;
+          font-weight: 700;
+          margin: .5rem 0 1rem; }
 
 .gradient-btn {
   text-transform: uppercase;
