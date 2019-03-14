@@ -417,6 +417,87 @@ nav {
   }
 }
 
+.person {
+  margin: 6rem 150px 4rem 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-text {
+	width: 35%;
+
+	&__title {
+	  font-size: 2.5rem;
+	}
+
+	&__subtitle {
+	  color: $lighter-subtitle-color;
+	  font-size: 1.3rem;
+	  font-weight: 700;
+	  margin: .7rem 0;
+	}
+
+	&__text {
+	  line-height: 1.5;
+	  width: 80%;
+	  margin-bottom: 5rem;
+	}
+  }
+
+  &-photo {
+	display: flex;
+	width: 60%;
+
+	&__img {
+
+	}
+
+	&-info {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  background: linear-gradient(to bottom right, $first-gradient, $second-gradient);
+	  padding: 3rem;
+
+	  &-wrapper {
+
+		&__title {
+		  color: $header-text-color;
+		  font-weight: 700;
+		  line-height: 1.5;
+		}
+
+		&__subtitle {
+		  color: $header-text-color;
+		  line-height: 1.5;
+		}
+	  }
+
+	  &-icons {
+		display: flex;
+
+		&__icon {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  width: 60px;
+		  height: 60px;
+		  background-color: $bg-color;
+		  border-radius: 50%;
+		  font-size: 2rem;
+		  margin-right: 1rem;
+
+		  &:hover {
+			i {
+			  color: $second-gradient;
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
+
 .gradient-btn {
   text-transform: uppercase;
   background: linear-gradient(to right, $first-gradient, $second-gradient);
@@ -432,6 +513,45 @@ nav {
 
   &:hover {
 	transform: scale(1.2);
+  }
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+
+  &__title {
+	font-size: 1.2rem;
+	color: $title-color;
+	font-weight: 700;
+  }
+
+  &__num {
+	font-size: 1.2rem;
+	align-self: flex-end;
+	color: $title-color;
+	font-weight: 700;
+  }
+
+  &__bar {
+	width: 100%;
+	height: 14px;
+	border-radius: 7px;
+	background-color: $bg-progress-color;
+	position: relative;
+	margin-bottom: 2.5rem;
+
+	&::after {
+	  content: '';
+	  position: absolute;
+	  top: -14px;
+	  left: 0;
+	  right: 20%;
+	  bottom: 14px;
+	  background: linear-gradient(to right, $first-gradient, $second-gradient);
+	  border-radius: 7px;
+	}
   }
 }
 
