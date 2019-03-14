@@ -5,6 +5,11 @@
   src: url("../fonts/bernadette.ttf");
 }
 
+@font-face {
+  font-family: 'Myriad';
+  src: url("../fonts/myriad.ttf");
+}
+
 body {
   background-color: $bg-color;
 }
@@ -493,6 +498,149 @@ nav {
 			}
 		  }
 		}
+	  }
+	}
+  }
+}
+
+.price {
+  margin: 4rem 150px;
+  display: flex;
+
+  &-gradient {
+	background: linear-gradient(to bottom right, $first-gradient, $second-gradient);
+	width: 65%;
+  }
+
+  &-value {
+	margin: 5rem 0 5rem 7rem;
+	padding: 2rem;
+	background-color: $bg-color;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__title {
+	  font-size: 2.5rem;
+	  margin-bottom: 1rem;
+	}
+
+	&__subtitle {
+	  font-weight: 700;
+	  font-size: 1.2rem;
+	  color: $title-color;
+	}
+
+	&__cost {
+	  background: linear-gradient(to right, $first-gradient, $second-gradient);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  color: $first-gradient;
+	  margin: 2rem 0;
+	  font-size: 4rem;
+	  font-weight: 700;
+	  font-family: 'Myriad', sans-serif;
+
+	  &--big {
+		font-size: 5rem;
+		font-weight: 700;
+		font-family: 'Myriad', sans-serif;
+	  }
+	}
+
+	&__text {
+	  margin-top: 1rem;
+	  text-align: center;
+	  line-height: 1.5;
+	}
+  }
+
+  &-info {
+	background-color: $bg-gray;
+	display: flex;
+
+	&-wrapper {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  width: 80%;
+
+	  &__title {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+	  }
+
+	  &__text {
+		line-height: 1.5;
+		width: 80%;
+
+		&--big {
+		  line-height: 1.5;
+		  font-weight: 700;
+		  margin-bottom: 1rem;
+		  width: 80%;
+		}
+	  }
+	}
+  }
+
+  &-feature {
+	margin: 5rem 2rem 5rem 0;
+	padding: 2rem;
+	width: 40%;
+	background: linear-gradient(to bottom right, $first-gradient, $second-gradient);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&__title {
+	  font-weight: 700;
+	  font-family: 'Myriad', sans-serif;
+	  font-size: 3rem;
+	  color: $header-text-color;
+	}
+
+	&__subtitle {
+	  font-size: 1.5rem;
+	  color: $header-text-color;
+	  margin-bottom: 1rem;
+	}
+
+	&-list {
+	  &-item {
+		display: flex;
+		align-items: center;
+		color: $header-text-color;
+
+		&__text {
+		  margin-left: 1rem;
+		  color: $header-text-color;
+		  line-height: 1.5;
+		  margin-bottom: .5rem;
+		  font-weight: 700;
+		  font-size: .9rem;
+		}
+	  }
+	}
+
+	&__btn {
+	  background-color: $bg-color;
+	  text-transform: uppercase;
+	  color: $button-text-color;
+	  font-weight: 700;
+	  box-shadow: none;
+	  border: 0;
+	  outline: 0;
+	  border-radius: 15px;
+	  padding: .5rem 1rem;
+	  cursor: pointer;
+	  transition: transform .5s;
+	  margin-top: 3rem;
+
+	  &:hover {
+		transform: scale(1.2);
 	  }
 	}
   }

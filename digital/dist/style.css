@@ -472,6 +472,10 @@ table {
   font-family: 'Bernadette';
   src: url(src/fonts/bernadette.ttf); }
 
+@font-face {
+  font-family: 'Myriad';
+  src: url(src/fonts/myriad.ttf); }
+
 body {
   background-color: #ffffff; }
 
@@ -818,6 +822,108 @@ nav {
           margin-right: 1rem; }
           .person-photo-info-icons__icon:hover i {
             color: #3f519a; }
+
+.price {
+  margin: 4rem 150px;
+  display: flex; }
+  .price-gradient {
+    background: linear-gradient(to bottom right, #de813c, #3f519a);
+    width: 65%; }
+  .price-value {
+    margin: 5rem 0 5rem 7rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .price-value__title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem; }
+    .price-value__subtitle {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #333332; }
+    .price-value__cost {
+      background: linear-gradient(to right, #de813c, #3f519a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #de813c;
+      margin: 2rem 0;
+      font-size: 4rem;
+      font-weight: 700;
+      font-family: 'Myriad', sans-serif; }
+      .price-value__cost--big {
+        font-size: 5rem;
+        font-weight: 700;
+        font-family: 'Myriad', sans-serif; }
+    .price-value__text {
+      margin-top: 1rem;
+      text-align: center;
+      line-height: 1.5; }
+  .price-info {
+    background-color: #f4f4f4;
+    display: flex; }
+    .price-info-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80%; }
+      .price-info-wrapper__title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem; }
+      .price-info-wrapper__text {
+        line-height: 1.5;
+        width: 80%; }
+        .price-info-wrapper__text--big {
+          line-height: 1.5;
+          font-weight: 700;
+          margin-bottom: 1rem;
+          width: 80%; }
+  .price-feature {
+    margin: 5rem 2rem 5rem 0;
+    padding: 2rem;
+    width: 40%;
+    background: linear-gradient(to bottom right, #de813c, #3f519a);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .price-feature__title {
+      font-weight: 700;
+      font-family: 'Myriad', sans-serif;
+      font-size: 3rem;
+      color: #ffffff; }
+    .price-feature__subtitle {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin-bottom: 1rem; }
+    .price-feature-list-item {
+      display: flex;
+      align-items: center;
+      color: #ffffff; }
+      .price-feature-list-item__text {
+        margin-left: 1rem;
+        color: #ffffff;
+        line-height: 1.5;
+        margin-bottom: .5rem;
+        font-weight: 700;
+        font-size: .9rem; }
+    .price-feature__btn {
+      background-color: #ffffff;
+      text-transform: uppercase;
+      color: #020202;
+      font-weight: 700;
+      box-shadow: none;
+      border: 0;
+      outline: 0;
+      border-radius: 15px;
+      padding: .5rem 1rem;
+      cursor: pointer;
+      transition: transform .5s;
+      margin-top: 3rem; }
+      .price-feature__btn:hover {
+        transform: scale(1.2); }
 
 .gradient-btn {
   text-transform: uppercase;
