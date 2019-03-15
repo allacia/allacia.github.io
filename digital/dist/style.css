@@ -824,7 +824,7 @@ nav {
             color: #3f519a; }
 
 .price {
-  margin: 4rem 150px;
+  margin: 4rem 150px 0;
   display: flex; }
   .price-gradient {
     background: linear-gradient(to bottom right, #de813c, #3f519a);
@@ -924,6 +924,36 @@ nav {
       margin-top: 3rem; }
       .price-feature__btn:hover {
         transform: scale(1.2); }
+
+.contacts {
+  margin: 0 150px;
+  background-image: linear-gradient(to right, rgba(222, 129, 60, 0.8), rgba(63, 81, 154, 0.8)), url(src/img/bg-contact.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem; }
+  .contacts__title {
+    font-family: 'Bernadette', sans-serif;
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: center; }
+  .contacts-icons {
+    display: flex;
+    justify-content: center; }
+    .contacts-icons__item {
+      margin: 4rem 2rem;
+      font-size: 2rem;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border: 3px solid #ffffff;
+      border-radius: 50%;
+      transition: color, border-color .5s; }
+      .contacts-icons__item:hover {
+        color: #040404;
+        border-color: #040404; }
 
 .gradient-btn {
   text-transform: uppercase;
